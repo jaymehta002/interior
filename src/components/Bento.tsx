@@ -22,13 +22,13 @@ export default function Bento() {
                     Your browser does not support the video tag.
                 </video>
                 <div className=' absolute bottom-0  w-[60%] lg:w-[40%] left-0'>
-                    <div className=' rounded-t-3xl w-[60%] rounded-l-none bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
+                    <div className=' rounded-t-3xl w-[60%] rounded-l-none flex justify-center items-start bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
                         <BorderButton text='Georgeus Interior' ></BorderButton>
                     </div>
-                    <div className=' text-3xl lg:text-6xl font-semibold w-[80%] rounded-t-3xl rounded-l-none bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
+                    <div className=' text-3xl lg:text-6xl font-semibold w-[80%] rounded-t-3xl rounded-l-none flex justify-center items-start bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
                         Modern
                     </div>
-                    <div className=' text-3xl lg:text-6xl font-semibold w-full rounded-t-3xl rounded-l-none bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
+                    <div className=' text-3xl lg:text-6xl font-semibold w-full rounded-t-3xl rounded-l-none flex justify-center items-start bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
                         Minimalist
                     </div>
                 </div>
