@@ -10,7 +10,7 @@ export default function Herosection() {
   return (
     <section className="relative h-screen w-full mt-16 sm:mt-7 ">
       <div className=' h-full w-full absolute p-4 sm:p-10  overflow-hidden'>
-        <Image src={backgroundimage} alt='background image' className='image border h-full w-full rounded-2xl object-cover object-center'></Image>
+        <Image src={backgroundimage} alt='background image' className='image border h-full w-full rounded-3xl object-cover object-center'></Image>
       </div>
       <div className=' h-full w-full flex flex-col  p-4 sm:p-10'>
         <div className=' h-[70%] w-full flex justify-center items-center'>
