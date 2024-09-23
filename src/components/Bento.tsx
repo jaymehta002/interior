@@ -6,8 +6,8 @@ import { MoveUpRight } from 'lucide-react'
 
 export default function Bento() {
     return (
-        <section className=' grid grid-cols-1 md:grid-cols-12 mt-5 w-full p-4 sm:p-10 gap-5 '>
-            <div className=' relative w-full md:col-span-8'>
+        <section className=' grid grid-cols-1 lg:grid-cols-12 mt-5 w-full p-4 sm:p-10 gap-5 '>
+            <div className=' relative w-full lg:col-span-8'>
                 <video
                     width="100%"
                     height="100%"
@@ -22,13 +22,13 @@ export default function Bento() {
                     Your browser does not support the video tag.
                 </video>
                 <div className=' absolute bottom-0  w-[60%] lg:w-[40%] left-0'>
-                    <div className=' w-[60%] rounded-se-2xl flex items-start bg-white  pt-3 pr-2 lg:pt-6 lg:pr-6'>
+                    <div className=' w-[60%] rounded-se-2xl flex items-start bg-white  pt-3 pr-2 lg:pt-3 lg:pr-6'>
                         <BorderButton text='Georgeus Interior' ></BorderButton>
                     </div>
-                    <div className=' text-3xl lg:text-6xl font-semibold w-[80%] rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-6 lg:pr-6'>
+                    <div className=' text-3xl lg:text-6xl font-semibold w-[80%] rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
                         Modern
                     </div>
-                    <div className=' text-3xl lg:text-6xl font-semibold w-full rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-6 lg:pr-6'>
+                    <div className=' text-3xl lg:text-6xl font-semibold w-full rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
                         Minimalist
                     </div>
                 </div>
