@@ -22,7 +22,7 @@ export default function NavigationBar() {
     return (
         <>
             <nav className={cn(
-                "flex m-0 border-none h-16 bg-black gap-5 justify-between items-center  top-0 z-40 inset-x-0 px-6 sm:px-24 w-full"
+                "flex m-0 border-none h-16 absolute gap-5 justify-between items-center  top-0 z-40 inset-x-0 px-6 sm:px-24 w-full"
             
             )}>
                 <div className='flex items-center w-full justify-between sm:gap-12'>
