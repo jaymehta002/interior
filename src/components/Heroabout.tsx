@@ -5,11 +5,11 @@ import Button from './ui/Button'
 
 export default function Heroabout() {
     return (
-        <section className=' grid grid-cols-1 lg:grid-cols-2 mt-10 p-4 sm:p-10 '>
+        <section className=' grid grid-cols-1 gap-5 lg:grid-cols-2 mt-5 p-4 sm:p-10 '>
             <div className=' w-full'>
                 <Image src={Sideimage} alt='sofa image' className=' rounded-3xl border h-full w-full' ></Image>
             </div>
-            <div className=' p-4 sm:p-10 flex flex-col gap-5 '>
+            <div className=' lg:p-4 sm:p-10 flex flex-col gap-5 '>
                 <p className='text-lg'>Timeless</p>
                 <h1 className=' text-3xl lg:text-6xl font-semibold '>Modern Style Timeless Charm</h1>
                 <p>
