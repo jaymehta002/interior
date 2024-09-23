@@ -2,27 +2,24 @@ import React from 'react'
 
 export default function Herosection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen bg-black w-full ">
       {/* Video element */}
+      <div className=' absolute h-full top-0 w-full   px-16'>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="h-full w-full rounded-2xl mb-16 border border-white/60 object-cover"
         autoPlay
         loop
         muted
         playsInline
       >
         <source src="https://clientwork99.s3.ap-south-1.amazonaws.com/herobackgroundvideo.mp4" type="video/mp4" />
-        {/* Add a fallback for browsers that don’t support video */}
         Your browser does not support the video tag.
       </video>
-
-      {/* Overlay content goes here */}
-      <div className="relative z-10 flex items-center justify-center h-full text-white">
-        <h1 className="text-4xl font-bold">Your Content Here</h1>
       </div>
-
-      {/* Optional background overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+      <div className="relative z-10 flex flex-col items-center  justify-center h-full text-white">
+        <h1 className=" text-4xl sm:text-7xl max-w-5xl text-center font-semibold inline-flex p-3 bg-gradient-to-r from-white to-neutral-100 text-transparent bg-clip-text">
+        Crafting Luxury Bespoke Furniture & Interiors for Timeless Elegance        </h1>
+      </div>
     </section>
   )
 }

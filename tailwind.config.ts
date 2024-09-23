@@ -7,6 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    "animation": {
+      "shine": "shine 2s linear infinite"
+    },
+    "keyframes": {
+      "shine": {
+        "from": {
+          "backgroundPosition": "0 0"
+        },
+        "to": {
+          "backgroundPosition": "-200% 0"
+        }
+      }
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -14,6 +27,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio'),  ],
 };
 export default config;

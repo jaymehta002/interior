@@ -22,10 +22,10 @@ export default function NavigationBar() {
     return (
         <>
             <nav className={cn(
-                "flex m-0 border-none absolute gap-5 justify-between items-center  top-0 z-40 inset-x-0 h-14 px-6 sm:px-16 w-full"
+                "flex m-0 border-none h-16 bg-black gap-5 justify-between items-center  top-0 z-40 inset-x-0 px-6 sm:px-24 w-full"
             
             )}>
-                <div className='flex items-center sm:gap-12'>
+                <div className='flex items-center w-full justify-between sm:gap-12'>
                     <a href='/' className='flex items-end gap-2'>
                         <Image src={logo} alt='logo' className=' h-14 w-24 pt-2' />
                     </a>
@@ -33,7 +33,7 @@ export default function NavigationBar() {
                         <ul className='flex items-center text-sm font-medium gap-4'>
                             {NavigationBarList.map(({ name, link }, index) => (
                                 <Link key={index} href={`/${link}`}>
-                                    <li className=' text-white  font-semibold'>{name}</li>
+                                    <li className=' text-white text-lg opacity-80 hover:opacity-100  font-semibold'>{name}</li>
                                 </Link>
                             ))}
                         </ul>
@@ -90,7 +90,7 @@ function List() {
             <ul className='font-medium gap-9 h-full pt-44  '>
                 {NavigationBarList.map(({ name, link }, index) => (
                     <Link key={index} href={`/${link}`}>
-                        <li className=' text-lg font-semibold transition-colors text-white opacity-70 hover:opacity-100'>{name}</li>
+                        <li className=' text-lg  font-semibold transition-colors text-white opacity-70 hover:opacity-100'>{name}</li>
                     </Link>
                 ))}
             </ul>
