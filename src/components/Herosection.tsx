@@ -1,25 +1,62 @@
-import React from 'react'
+"use client"
+
+import Image from 'next/image'
+import React, { useEffect, useState } from 'react'
+import backgroundimage from '@/../public/krishnakunj2.jpg'
+import Button from './ui/Button'
+
 
 export default function Herosection() {
   return (
-    <section className="relative h-screen w-full ">
-      {/* Video element */}
-      <div className=' absolute h-full top-0 left-0 w-full  '>
-      <video
-        className="h-full w-full shadow-xl  border object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="https://clientwork99.s3.ap-south-1.amazonaws.com/Casa+Mobilia+-+Finest+Bespoke+Furniture+%26+Interiors+-+New+Studio+2021~2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section className="relative h-screen w-full mt-16 sm:mt-7 ">
+      <div className=' h-full w-full absolute p-4 sm:p-10  overflow-hidden'>
+        <Image src={backgroundimage} alt='background image' className='image border h-full w-full rounded-2xl object-cover object-center'></Image>
       </div>
-      <div className="relative z-10 flex flex-col justify-end items-start h-full text-white">
-        <h1 className="text-7xl max-w-5xl mb-8 ml-8 inline-flex p-3 bg-gradient-to-r from-white to-neutral-100 text-transparent bg-clip-text">
-        Crafting Luxury Bespoke Furniture & Interiors for Timeless Elegance        </h1>
+      <div className=' h-full w-full flex flex-col  p-4 sm:p-10'>
+        <div className=' h-[70%] w-full flex justify-center items-center'>
+          <h1 className=' text-white z-10 text-5xl lg:text-9xl font-bold'>Contemporary</h1>
+        </div>
+        <div className=' mb-5 sm:mb-0'>
+        <div className=' px-3 flex gap-6 flex-col md:flex-row'>
+          <div className=' bg-black/5 p-4 md:w-[28rem] gap-3 rounded-xl backdrop-blur-2xl flex flex-col justify-between border border-white/60 shadow-sm'>
+            <p className=' text-wrap text-white '>
+              Blending modern aesthetics with timeless elegance, our bespoke furniture designs transform spaces, redefining the art of sophisticated living.
+            </p>
+            <div >
+
+            <Button text='View More '></Button>
+            </div>
+          </div>
+          <div className=' bg-black/5 p-3 border-white/60  rounded-xl backdrop-blur-2xl border shadow-sm'>
+          <VideoPlayer  url='https://www.youtube.com/watch?v=opEVjrYNXWI'></VideoPlayer>
+          </div>
+        </div>
+        </div>
       </div>
     </section>
   )
 }
+
+const VideoPlayer = ({ url }: { url: string }) => {
+  const [isSSR, setIsSSR] = useState(true);
+
+  useEffect(() => {
+      setIsSSR(false);
+  }, []);
+
+  if (isSSR) {
+      return null; // Or return a loading spinner during SSR
+  }
+
+  // Extract the video ID from the URL
+  const videoId = url.split("v=")[1].split("&")[0]; // Get the video ID
+
+  return (
+      <iframe
+          src={`https://www.youtube.com/embed/${videoId}`} // Use the embed URL
+          className=" rounded-lg h-full w-full  transition-transform duration-300 group-hover:scale-110"
+          allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+      ></iframe>
+  );
+};
