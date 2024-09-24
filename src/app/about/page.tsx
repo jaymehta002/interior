@@ -28,7 +28,7 @@ export default function page() {
       </div>
       <div className=' mt-28 space-y-8'>
         <p className='text-3xl text-center lg:text-6xl font-semibold'>Crafting Timeless Spaces</p>
-        <p className=' text-center max-w-2xl mx-auto'>Pušform's talent is as know-how, a copacity that merges culture and knowledge and which, prior to becoming a gesture, is a design idea</p>
+        <p className=' text-center max-w-2xl mx-auto'>Pušform&apos;s talent is as know-how, a copacity that merges culture and knowledge and which, prior to becoming a gesture, is a design idea</p>
         <div className=' grid grid-cols-1 md:grid-cols-2 gap-7'>
           <div className=' relative rounded-3xl '>
             <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
@@ -37,7 +37,7 @@ export default function page() {
           <div className=' rounded-3xl '>
             <div className=' rounded-2xl bg-black text-white object-cover h-[26rem] p-10 lg:p-24 flex gap-8 justify-center flex-col'>
               <p className=' text-4xl'>Our History</p>
-              <p>Poliform was founded in 1970 by Alberto Spinelli, Aldo Spinelli, and Giovanni Anzani, transforming their family's 1942 artisan business into a modern industry. The new name, Poliform, symbolized a shift towards flexibility, simplicity, elegance, and future-forward thinking.</p>
+              <p>Poliform was founded in 1970 by Alberto Spinelli, Aldo Spinelli, and Giovanni Anzani, transforming their family&apos;s 1942 artisan business into a modern industry. The new name, Poliform, symbolized a shift towards flexibility, simplicity, elegance, and future-forward thinking.</p>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@ export default function page() {
               <div className=' text-2xl lg:text-6xl font-semibold w-full p-5 rounded-ee-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
               Our Knowledge
               </div>
-              <div className=' text-lg p-5  w-[80%] rounded-ee-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
-              Poliform's strength is its expertise, combining culture and inowledge to form design ideas before tiringing them to life
+              <div className=' text-xs md:text-lg p-5  w-[80%] rounded-ee-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+              Poliform&apos;s strength is its expertise, combining culture and inowledge to form design ideas before tiringing them to life
               </div>
             </div>
         <Image src={textimage2} alt='image' className=' rounded-3xl h-[26rem] object-cover w-full '></Image>
