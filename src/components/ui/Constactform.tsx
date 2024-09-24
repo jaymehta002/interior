@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm, SubmitHandler } from "react-hook-form"
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
@@ -13,7 +13,6 @@ type Inputs = {
 
 export default function Contact() {
 
-    const [errorMessage, seterror] = useState<null | string>(null);
     const {
         register,
         handleSubmit,
@@ -22,11 +21,9 @@ export default function Contact() {
     const onSubmit: SubmitHandler<Inputs> = async (formData) => {
         const { data, error } = await sendEmail(formData);
         if (error) {
-            seterror(error);
             return;
         }
         if (data?.error) {
-            seterror(data.error.message)
             return;
         }
         toast.success("Email sent successfully!");
