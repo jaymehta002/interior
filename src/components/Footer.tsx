@@ -36,7 +36,7 @@ export default function Footer() {
           <p className=' text-left '>Whether you have distinct taste, or a unique space that needs a custom designed piece, our certified Custom Made furniture, will help you get anything made. Browse for ideas including: custom upholstery, custom tables, custom chairs, custom bedroom sets, custom shelves, custom built-ins, and more.</p>
         </div>
         <div className=' mt-10 lg:mt-0'>
-          <Image src={sofa} alt='sofa' className=' md:h-[18rem] md:w-[28rem]  rounded-2xl '></Image>
+          <Image src={sofa} alt='sofa' className=' md:h-[18rem] md:w-[28rem] object-cover rounded-2xl '></Image>
         </div>
       </div>
       <div className=' pb-9 flex flex-col md:flex-row md:justify-between'>

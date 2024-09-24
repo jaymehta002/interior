@@ -41,7 +41,7 @@ export default function Bento() {
                     <div className='  absolute top-5 left-5'>
                         <BorderButton text=' Best Furniture' className=' border-white text-white'></BorderButton>
                     </div>
-                    <Image src={OutDoorSofa} alt='out door sofa' className=' rounded-3xl h-full'>
+                    <Image src={OutDoorSofa} alt='out door sofa' className=' object-cover rounded-3xl h-full'>
                     </Image>
                     <div className=' absolute -bottom-3 -right-3  rounded-full p-3 transition-all duration-200 ease-in-out group-hover/cardthree:-translate-x-2 group-hover/cardthree:-translate-y-2 bg-white z-10 size-16'><MoveUpRight className=' group-hover/cardthree:-rotate-90 bg-black p-2 transition-all duration-200 ease-in-out  text-white size-full rounded-full' /></div>
                 </div>

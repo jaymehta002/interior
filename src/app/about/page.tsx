@@ -1,27 +1,59 @@
 import Image from 'next/image'
 import React from 'react'
-import profile from '@/../public/ankit.jpeg'
-import { HorizontalScrollCarousel } from '@/components/ui/Clintreviews'
-
+import textimage1 from '@/../public/11.jpg'
+import textimage2 from '@/../public/12.jpg'
+import Starssection from '@/components/Starsection'
 
 export default function page() {
   return (
-    <section className=' lg:grid lg:grid-cols-3 gap-7  mt-20 p-4 sm:p-14 space-y-12'>
-      <div className=' flex flex-col w-full gap-10 lg:col-span-2'>
-        <h1 className='text-4xl lg:text-6xl  font-semibold max-w-2xl'>About Us</h1>
-        <p className=' max-w-xl'>
-          Welcome to Casa Mobilia, the premier destination for bespoke furniture and interiors that elegantly blend global refinement with indigenous design. Founded in 2012 by Ankit Agarwal and Sadhna Goyal under Aakarshan Furniture Systems, our brand embodies a commitment to contemporary elegance and timeless artistry. Our curated selection showcases the rich heritage of both traditional and modern Indian craftsmanship, offering unique, customizable pieces that resonate with the individual tastes of our discerning clients. Each item is crafted with meticulous attention to detail, ensuring that it is not just a product, but a collectible work of art that contributes to a legacy of design excellence.
-        </p>
-        <p className=' max-w-xl'>
-          At Casa Mobilia, we believe in a collaborative approach to design, working closely with clients to transform their visions into stunning realities. Our talented team of designers provides personalized consultations, whether you’re seeking a statement piece or a complete interior overhaul. As we continue to evolve, we remain dedicated to innovation and sustainability, regularly launching awe-inspiring collections that reflect our commitment to artistry and style. Join us in creating beautiful spaces that embody your unique personality and elevate your lifestyle.
-        </p>
+    <section className='p-4 sm:p-10 mt-14 text-stone-800 '>
+      <div className=' flex'>
+        <div className=' text-4xl sm:text-6xl lg:text-8xl justify-center items-center font-extrabold  flex flex-wrap max-w-3xl mx-auto gap-5 sm:gap-10 text-center'>Poliform
+          <Image src={textimage1} alt='sofa imaage' className='w-24 h-12 sm:w-36 sm:h-20 object-cover flex rounded-2xl sm:rounded-3xl'></Image>
+          is <Image src={textimage2} alt='sofa imaage' className='w-24 h-12 sm:w-36 sm:h-20 object-cover flex rounded-2xl sm:rounded-3xl'></Image>
+          <span className=' flex  flex-wrap'>Known for </span>Innovative
+        </div>
       </div>
-      <div className=' lg:col-span-1'>
-          <Image src={profile} alt='profile' className=' rounded-2xl'></Image>
+      <Starssection></Starssection>
+      <div className=' grid grid-cols-7 gap-6 mt-8'>
+        <div className=' col-span-2'>
+          <Image src={textimage1} alt='image' className=' object-cover rounded-3xl h-80 w-full '></Image>
+        </div>
+        <div className=' col-span-3'>
+          <Image src={textimage2} alt='image' className=' object-cover rounded-3xl h-80 w-full '></Image>
+        </div>
+        <div className=' col-span-2'>
+          <Image src={textimage1} alt='image' className=' object-cover rounded-3xl h-80 w-full '></Image>
+        </div>
       </div>
-      <div className=' sm:col-span-3'>
-        <HorizontalScrollCarousel></HorizontalScrollCarousel>
+      <div className=' mt-28 space-y-8'>
+        <p className='text-3xl text-center lg:text-6xl font-semibold'>Crafting Timeless Spaces</p>
+        <p className=' text-center max-w-2xl mx-auto'>Pušform's talent is as know-how, a copacity that merges culture and knowledge and which, prior to becoming a gesture, is a design idea</p>
+        <div className=' grid grid-cols-1 md:grid-cols-2 gap-7'>
+          <div className=' rounded-3xl '>
+            <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
+
+          </div>
+          <div className=' rounded-3xl '>
+            <div className=' rounded-2xl bg-black text-white object-cover h-[26rem] p-10 lg:p-24 flex gap-8 justify-center flex-col'>
+              <p className=' text-4xl'>Our History</p>
+              <p>Poliform was founded in 1970 by Alberto Spinelli, Aldo Spinelli, and Giovanni Anzani, transforming their family's 1942 artisan business into a modern industry. The new name, Poliform, symbolized a shift towards flexibility, simplicity, elegance, and future-forward thinking.</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <div className=' mt-10'>
+      <Image src={textimage2} alt='image' className=' rounded-3xl h-[26rem] object-cover w-full '></Image>
+      </div>
+      <div className=' grid grid-cols-2 gap-7 mt-10'>
+          <div className=' rounded-3xl '>
+            <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
+
+          </div>
+          <div className=' rounded-3xl '>
+          <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
+          </div>
+        </div>
     </section>
   )
 }

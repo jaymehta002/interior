@@ -19,7 +19,7 @@ export default function Portfolio() {
             <div className=' grid grid-cols-1 lg:grid-cols-3  w-full gap-3 mt-12'>
                 <div className=' flex flex-col gap-5'>
                     <div className=' relative  group/card1 '>
-                        <Image src={office2} alt='office' className=' rounded-3xl'></Image>
+                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
                                 Office
@@ -28,7 +28,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className=' relative  group/card2'>
-                        <Image src={office2} alt='office' className=' rounded-3xl'></Image>
+                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
                                 Office
@@ -39,7 +39,7 @@ export default function Portfolio() {
                 </div>
                 <div>
                     <div className=' relative  group/card3'>
-                        <Image src={Sofa2} alt='office' className=' rounded-3xl'></Image>
+                        <Image src={Sofa2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
                                 Office
@@ -50,7 +50,7 @@ export default function Portfolio() {
                 </div>
                 <div className=' flex flex-col gap-5'>
                     <div className=' relative  group/card1'>
-                        <Image src={office2} alt='office' className=' rounded-3xl'></Image>
+                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
                                 Office
@@ -59,7 +59,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className=' relative  group/card2'>
-                        <Image src={office2} alt='office' className=' rounded-3xl'></Image>
+                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
                                 Office
