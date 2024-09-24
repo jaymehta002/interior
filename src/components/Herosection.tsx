@@ -14,7 +14,7 @@ export default function Herosection() {
       </div>
       <div className=' h-full w-full flex flex-col  p-4 sm:p-10'>
         <div className=' h-[70%] w-full flex justify-center items-center'>
-          <h1 className=' text-white z-10 text-5xl lg:text-9xl font-bold'>Contemporary</h1>
+          <h1 className=' text-white z-10 text-4xl lg:text-9xl font-bold'>Contemporary</h1>
         </div>
         <div className=' mb-5 sm:mb-0'>
         <div className=' px-3 flex gap-6 flex-col md:flex-row'>

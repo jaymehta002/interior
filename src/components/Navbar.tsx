@@ -15,7 +15,7 @@ const navigationItems: NavigationItem[] = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "" },
-    { name: "Contact", href: "" },
+    { name: "Contact", href: "/contact" },
 ];
 // Variants for the navigation bar animation
 const navVariants = {

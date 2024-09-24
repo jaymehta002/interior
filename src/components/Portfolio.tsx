@@ -16,7 +16,7 @@ export default function Portfolio() {
                     <div className=' flex lg:justify-end'><Button text='View More'></Button></div>
                 </div>
             </div>
-            <div className=' grid grid-cols-1 lg:grid-cols-3 h-screen w-full gap-3 mt-12'>
+            <div className=' grid grid-cols-1 lg:grid-cols-3  w-full gap-3 mt-12'>
                 <div className=' flex flex-col gap-5'>
                     <div className=' relative  group/card1 '>
                         <Image src={office2} alt='office' className=' rounded-3xl'></Image>

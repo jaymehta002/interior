@@ -23,12 +23,12 @@ export default function Bento() {
                 </video>
                 <div className=' absolute bottom-0  w-[60%] lg:w-[40%] left-0'>
                     <div className=' w-[60%] rounded-se-2xl flex items-start bg-white  pt-3 pr-2 lg:pt-3 lg:pr-6'>
-                        <BorderButton text='Georgeus Interior' ></BorderButton>
+                        <BorderButton text='Georgeus Interior'  className=' text-xs'></BorderButton>
                     </div>
-                    <div className=' text-3xl lg:text-6xl font-semibold w-[80%] rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+                    <div className=' text-2xl lg:text-6xl font-semibold w-[80%] rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
                         Modern
                     </div>
-                    <div className=' text-3xl lg:text-6xl font-semibold w-full rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+                    <div className=' text-2xl lg:text-6xl font-semibold w-full rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
                         Minimalist
                     </div>
                 </div>
