@@ -30,9 +30,9 @@ export default function page() {
         <p className='text-3xl text-center lg:text-6xl font-semibold'>Crafting Timeless Spaces</p>
         <p className=' text-center max-w-2xl mx-auto'>Pušform's talent is as know-how, a copacity that merges culture and knowledge and which, prior to becoming a gesture, is a design idea</p>
         <div className=' grid grid-cols-1 md:grid-cols-2 gap-7'>
-          <div className=' rounded-3xl '>
+          <div className=' relative rounded-3xl '>
             <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
-
+        
           </div>
           <div className=' rounded-3xl '>
             <div className=' rounded-2xl bg-black text-white object-cover h-[26rem] p-10 lg:p-24 flex gap-8 justify-center flex-col'>
@@ -42,18 +42,26 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className=' mt-10'>
-      <Image src={textimage2} alt='image' className=' rounded-3xl h-[26rem] object-cover w-full '></Image>
+      <div className=' mt-10 relative'>
+      <div className=' absolute top-0  w-[60%] lg:w-[40%] left-0 '>
+              <div className=' text-2xl lg:text-6xl font-semibold w-full p-5 rounded-ee-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+              Our Knowledge
+              </div>
+              <div className=' text-lg p-5  w-[80%] rounded-ee-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+              Poliform's strength is its expertise, combining culture and inowledge to form design ideas before tiringing them to life
+              </div>
+            </div>
+        <Image src={textimage2} alt='image' className=' rounded-3xl h-[26rem] object-cover w-full '></Image>
       </div>
       <div className=' grid grid-cols-2 gap-7 mt-10'>
-          <div className=' rounded-3xl '>
-            <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
-
-          </div>
-          <div className=' rounded-3xl '>
+        <div className=' rounded-3xl '>
           <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
-          </div>
+
         </div>
+        <div className=' rounded-3xl '>
+          <Image src={textimage1} alt='image' className=' rounded-2xl object-cover h-[26rem]'></Image>
+        </div>
+      </div>
     </section>
   )
 }
