@@ -1,4 +1,5 @@
 import Bento from "@/components/Bento";
+import Footer from "@/components/Footer";
 import Heroabout from "@/components/Heroabout";
 import Herosection from "@/components/Herosection";
 import Portfolio from "@/components/Portfolio";
@@ -12,7 +13,7 @@ export default function Home() {
      <Starssection></Starssection>
      <Heroabout></Heroabout>
      <Portfolio></Portfolio>
-     <div className=" h-screen"></div>
+     <Footer></Footer>
     </main>
   );
 }
