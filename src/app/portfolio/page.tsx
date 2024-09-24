@@ -56,7 +56,7 @@ export default function page() {
             <Image src={sofa3} alt='sofa' className='rounded-3xl w-full h-[43rem] object-cover '></Image>
             <div className=' absolute top-0 right-0  w-[60%] lg:w-[40%]'>
               <div className='  font-semibold text-sm lg:text-base w-full rounded-es-2xl p-3 lg:text-end flex items-start bg-[#f0e9e3]   pt-1 pr-2 lg:pt-3 lg:pr-6'>
-                Discover Poliform&apos;s 2024 Collection: innovative and elegant sofas, chairs, tables, and integrated systems designed to elevate your home's style.
+                Discover Poliform&apos;s 2024 Collection: innovative and elegant sofas, chairs, tables, and integrated systems designed to elevate your home&apos;s style.
               </div>
             </div>
             <div className=' absolute -top-28 right-0 rounded-full p-3 bg-[#f0e9e3]  group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'>
