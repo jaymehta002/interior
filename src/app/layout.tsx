@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavigationBar from "@/components/Navbar";
 import { Inter } from 'next/font/google';
+import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
       >
         <NavigationBar></NavigationBar>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

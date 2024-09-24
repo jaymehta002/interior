@@ -32,15 +32,15 @@ export default function Footer() {
     <section className='mt-16 bg-black text-white  p-4 sm:p-10'>
       <div className=' flex justify-between lg:flex-row flex-col'>
         <div className=' max-w-xl flex-col flex gap-9 '>
-          <div className='text-3xl lg:text-6xl  font-semibold max-w-2xl'>Explore Our Proudly Collection</div>
+          <div className='text-4xl lg:text-6xl  font-semibold max-w-2xl'>Explore Our Proudly Collection</div>
           <p className=' text-left '>Whether you have distinct taste, or a unique space that needs a custom designed piece, our certified Custom Made furniture, will help you get anything made. Browse for ideas including: custom upholstery, custom tables, custom chairs, custom bedroom sets, custom shelves, custom built-ins, and more.</p>
         </div>
-        <div className=''>
-          <Image src={sofa} alt='sofa' className=' h-[18rem] w-[28rem]  rounded-2xl '></Image>
+        <div className=' mt-10 lg:mt-0'>
+          <Image src={sofa} alt='sofa' className=' md:h-[18rem] md:w-[28rem]  rounded-2xl '></Image>
         </div>
       </div>
-      <div className=' pb-9 flex justify-between'>
-        <div className="mt-16  flex gap-40">
+      <div className=' pb-9 flex flex-col md:flex-row md:justify-between'>
+        <div className="mt-16 justify-center md:justify-start flex gap-40">
           <div className="md:mt-0">
             <h3 className="text-sm font-semibold leading-6">
               Connect
@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='  flex justify-end items-end'>
+        <div className='  flex justify-center md:justify-end items-end mt-10 md:mt-0 '>
           <div>
 
           <p className=' text-8xl font-bold'>CASA</p>

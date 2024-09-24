@@ -12,10 +12,9 @@ interface NavigationItem {
 
 // List of navigation items
 const navigationItems: NavigationItem[] = [
-    { name: "Home", href: "" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
     { name: "Portfolio", href: "" },
-    { name: "Blogs", href: "" },
-    { name: "About", href: "" },
     { name: "Contact", href: "" },
 ];
 // Variants for the navigation bar animation
