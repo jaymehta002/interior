@@ -2,7 +2,10 @@ import React from 'react'
 import Button from './ui/Button'
 import Image from 'next/image'
 import Sofa2 from '@/../public/sofa2.jpg'
-import office2 from '@/../public/2.jpg'
+import office1 from '@/../public/office/10.jpg'
+import office2 from '@/../public/office/2.jpg'
+import home1 from '@/../public/residential/15.webp'
+import outdoor from '@/../public/outdoor/2.jpg'
 import { MoveUpRight } from 'lucide-react'
 
 
@@ -18,16 +21,16 @@ export default function Portfolio() {
             </div>
             <div className=' grid grid-cols-1 lg:grid-cols-3  w-full gap-3 mt-12'>
                 <div className=' flex flex-col gap-5'>
-                    <div className=' relative  group/card1 '>
-                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
+                    <a href={'/portfolio/office'} className=' relative  group/card1 '>
+                        <Image src={office1} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
-                                Office
+                                Commercial
                             </p>
                             <MoveUpRight className=' bg-white rounded-full p-2 size-11 group-hover/card1:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card1:-translate-y-1'></MoveUpRight>
                         </div>
-                    </div>
-                    <div className=' relative  group/card2'>
+                    </a>
+                    <a href={'/portfolio/office'} className=' relative  group/card2'>
                         <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
@@ -35,38 +38,38 @@ export default function Portfolio() {
                             </p>
                             <MoveUpRight className=' bg-white rounded-full p-2 size-11 group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'></MoveUpRight>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div className=' relative  group/card3'>
+                    <a href='/portfolio/livingspace' className=' relative  group/card3'>
                         <Image src={Sofa2} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
-                                Office
+                                Residential
                             </p>
                             <MoveUpRight className=' bg-white rounded-full p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div className=' flex flex-col gap-5'>
-                    <div className=' relative  group/card1'>
-                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
+                    <a href='/portfolio/livingspace' className=' relative  group/card1'>
+                        <Image src={home1} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
-                                Office
+                                Home
                             </p>
                             <MoveUpRight className=' bg-white rounded-full p-2 size-11 group-hover/card1:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card1:-translate-y-1'></MoveUpRight>
                         </div>
-                    </div>
-                    <div className=' relative  group/card2'>
-                        <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
+                    </a>
+                    <a href={'/portfolio/outdoor'} className=' relative  group/card2'>
+                        <Image src={outdoor} alt='office' className='object-cover rounded-3xl'></Image>
                         <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
-                                Office
+                                Outdoor
                             </p>
                             <MoveUpRight className=' bg-white rounded-full p-2 size-11 group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'></MoveUpRight>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>

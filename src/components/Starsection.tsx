@@ -10,7 +10,7 @@ export default function Starssection() {
                     Projects Done
                 </div>
                 <div className=''>
-                    <AnimatedCounter from={0} to={100} />
+                    <AnimatedCounter from={0} to={10} />
                     Years of Experience
                 </div>
                 <div className='lg:ml-10'>

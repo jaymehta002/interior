@@ -34,17 +34,21 @@ export default function Bento() {
                 </div>
             </div>
             <div className=' md:col-span-4 flex flex-col gap-5 group/cardthree'>
-                <div className=' bg-[#f0e9e3] relative rounded-3xl h-[45%] p-8'>
+                <div className=' bg-[#f0e9e3] flex flex-col justify-between relative rounded-3xl h-[50%] p-8'>
+                    <p>Aesthetic furniture where every piece tells a story of style</p>
+                    <p className=' font-bold text-4xl'>Into a gallery of elegance</p>
+                    <div>
                     <BorderButton text='Aesthetic' group='cardthree'></BorderButton>
+                    </div>
                 </div>
-                <div className=' relative rounded-3xl h-[55%]'>
+                <a href='/portfolio/outdoor' className=' relative rounded-3xl h-[41%]'>
                     <div className='  absolute top-5 left-5'>
                         <BorderButton text=' Best Furniture' className=' border-white text-white'></BorderButton>
                     </div>
                     <Image src={OutDoorSofa} alt='out door sofa' className=' object-cover rounded-3xl h-full'>
                     </Image>
                     <div className=' absolute -bottom-3 -right-3  rounded-full p-3 transition-all duration-200 ease-in-out group-hover/cardthree:-translate-x-2 group-hover/cardthree:-translate-y-2 bg-white z-10 size-16'><MoveUpRight className=' group-hover/cardthree:-rotate-90 bg-black p-2 transition-all duration-200 ease-in-out  text-white size-full rounded-full' /></div>
-                </div>
+                </a>
             </div>
         </section>
     )

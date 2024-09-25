@@ -14,7 +14,7 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Portfolio", href: "portfolio" },
+    { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
 ];
 // Variants for the navigation bar animation
@@ -57,9 +57,9 @@ export default function NavigationBar() {
                     className={cn('w-full bg-white py-2', isResized && "mt-3 border shadow-md rounded-3xl", isMenuOpen && "w-full")}
                 >
                     <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
-                        <div className='flex gap-2 items-center'>
+                        <a href='/' className='flex gap-2 items-center'>
                             <img src="/logo.png" className="w-[5.7rem] h-11 font-semibold" alt="Logo" />
-                        </div>
+                        </a>
                         <div className="hidden md:flex items-center gap-4 text-base font-medium">
                             {navigationItems.map((item, index) => (
                                 <a className='opacity-85 hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
