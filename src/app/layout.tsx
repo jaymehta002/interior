@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import NavigationBar from "@/components/Navbar";
 import { Inter } from 'next/font/google';
 import Footer from "@/components/Footer";
 import { constructMetadata } from "@/lib/utils";
+import AppLayout from "@/components/ui/Pageanimation";
 
 
 export const metadata = constructMetadata()
 
-const inter = Inter({style:'normal',subsets:['latin']})
+const inter = Inter({ style: 'normal', subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -18,11 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={ inter.className}
+        className={inter.className}
       >
-        <NavigationBar></NavigationBar>
-        {children}
-        <Footer></Footer>
+          <NavigationBar></NavigationBar>
+        <AppLayout>
+          {children}
+        </AppLayout>
+          <Footer></Footer>
       </body>
     </html>
   );
