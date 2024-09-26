@@ -33,9 +33,9 @@ export default function Portfolio() {
                             </div>
                         </a>
                     </BlurFade>
-                    <BlurFade>
+                    <BlurFade className=' h-full'>
                         <a href={'/portfolio/office'} className=' relative  group/card2'>
-                            <Image src={office2} alt='office' className='object-cover rounded-3xl'></Image>
+                            <Image src={office2} alt='office' className=' h-full object-cover rounded-3xl'></Image>
                             <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Office
@@ -46,10 +46,9 @@ export default function Portfolio() {
                     </BlurFade>
 
                 </div>
-                <div>
                     <BlurFade>
                         <a href='/portfolio/livingspace' className=' relative  group/card3'>
-                            <Image src={Sofa2} alt='office' className='object-cover rounded-3xl'></Image>
+                            <Image src={Sofa2} alt='office' className=' h-full object-cover rounded-3xl'></Image>
                             <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Residential
@@ -58,7 +57,6 @@ export default function Portfolio() {
                             </div>
                         </a>
                     </BlurFade>
-                </div>
                 <div className=' flex flex-col gap-5'>
                     <BlurFade>
                         <a href='/portfolio/livingspace' className=' relative  group/card1'>
