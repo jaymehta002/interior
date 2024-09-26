@@ -15,7 +15,7 @@ import BlurFade from '@/components/ui/blur-fade'
 
 export default function page() {
   return (
-    <section className='p-4 sm:p-10 mt-14 text-stone-900 '>
+    <section className='p-4 sm:p-10 mt-14 text-stone-900 overflow-hidden'>
       <div className=' grid grid-cols-1 lg:grid-cols-7 gap-10 '>
         <div className=' lg:col-span-4 h-full space-y-8 '>
           <BlurFade x={-50} className='text-4xl sm:text-6xl lg:text-8xl font-bold '>Casa mobilia Collection</BlurFade>

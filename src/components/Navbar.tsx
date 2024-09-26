@@ -51,7 +51,7 @@ export default function NavigationBar() {
             initial={{ y: -20,opacity:0 }}
             animate={{ y: 0,opacity:1 }}
             transition={{ duration: 0.4, ease: 'easeIn' }}
-            className='z-50 w-full top-0  min-w-full mx-auto fixed start-0 flex justify-center items-center'>
+            className='z-50 top-0 w-full  mx-auto fixed flex justify-center items-center'>
             <motion.div
                 animate={[isResized ? "resize" : "visible", isMenuOpen ? "open" : "close"]}
                 initial={false}
