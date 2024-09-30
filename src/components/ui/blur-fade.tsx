@@ -22,7 +22,7 @@ export default function BlurFade({
     <motion.div
       initial={{ y: y,x:x, opacity: 0, filter: `blur(${blur})` }}
       whileInView={{ x:0,y: 0, opacity: 1, filter: `blur(0px)` }}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{
         duration: 0.8,
         ease: 'easeIn',
