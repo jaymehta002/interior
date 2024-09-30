@@ -25,7 +25,7 @@ const LogoCarousel = () => (
         >
          
             {logos.map((logo, i) => (
-                <div className="h-32 w-40 flex justify-center items-center">
+                <div key={i} className="h-32 w-40 flex justify-center items-center">
                     <img
                         key={i}
                         src={logo.logo}
@@ -35,7 +35,7 @@ const LogoCarousel = () => (
                 </div>
             ))}
             {logos.map((logo, i) => (
-                <div className="h-32 w-40 flex justify-center items-center">
+                <div key={i} className="h-32 w-40 flex justify-center items-center">
                     <img
                         key={i}
                         src={logo.logo}
@@ -45,7 +45,7 @@ const LogoCarousel = () => (
                 </div>
             ))}
             {logos.map((logo, i) => (
-                <div className="h-32 w-40 flex justify-center items-center">
+                <div key={i} className="h-32 w-40 flex justify-center items-center">
                     <img
                         key={i}
                         src={logo.logo}
@@ -55,7 +55,7 @@ const LogoCarousel = () => (
                 </div>
             ))}
             {logos.map((logo, i) => (
-                <div className="h-32 w-40 flex justify-center items-center">
+                <div key={i} className="h-32 w-40 flex justify-center items-center">
                     <img
                         key={i}
                         src={logo.logo}
@@ -65,7 +65,7 @@ const LogoCarousel = () => (
                 </div>
             ))}
             {logos.map((logo, i) => (
-                <div className="h-32 w-40 flex justify-center items-center">
+                <div key={i} className="h-32 w-40 flex justify-center items-center">
                     <img
                         key={i}
                         src={logo.logo}
@@ -75,7 +75,7 @@ const LogoCarousel = () => (
                 </div>
             ))}
             {logos.map((logo, i) => (
-                <div className="h-32 w-40 flex justify-center items-center">
+                <div key={i} className="h-32 w-40 flex justify-center items-center">
                     <img
                         key={i}
                         src={logo.logo}

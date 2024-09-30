@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import Footer from "@/components/Footer";
 import { constructMetadata } from "@/lib/utils";
 import AppLayout from "@/components/ui/Pageanimation";
-
+import SmoothScroll from "@/components/ui/Smoothscrolling";
 
 export const metadata = constructMetadata()
 
@@ -21,10 +21,13 @@ export default function RootLayout({
         className={inter.className}
       >
           <NavigationBar></NavigationBar>
+        <SmoothScroll>
         <AppLayout>
           {children}
+
         </AppLayout>
           <Footer></Footer>
+        </SmoothScroll>
       </body>
     </html>
   );

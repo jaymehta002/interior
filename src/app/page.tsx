@@ -4,7 +4,6 @@ import Bento from "@/components/Bento";
 import Heroabout from "@/components/Heroabout";
 import Herosection from "@/components/Herosection";
 import LogoProof from "@/components/LogosSection";
-import Portfolio from "@/components/Portfolio";
 import { AppleCardsCarouselDemo } from "@/components/ui/SwipeCarousel";
 import Testimonial from "@/components/ui/Testimonial";
 
