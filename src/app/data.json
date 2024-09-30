@@ -1,0 +1,147 @@
+{
+    "home":{
+        "brands":[
+            {
+                "name":"Lingel",
+                "logo":"/brandslogo/logo4.png"
+            },
+            {
+                "name":"Geeken",
+                "logo":"/brandslogo/logo2.png"
+            },
+            {
+                "name":"King Koil",
+                "logo":"/brandslogo/logo5.png"
+            }
+        ],
+        "testimonial":[
+            {
+                "name": "Rohit Sharma",
+                "description": "Casa Mobilia truly exceeded my expectations! The quality of their bespoke furniture is unmatched, and the customization options are endless. My living room has never looked better!",
+                "stars": 5
+            },
+            {
+                "name": "Neha Kapoor",
+                "description": "From the initial consultation to the final delivery, the entire process was seamless. Casa Mobilia’s designs are a perfect blend of modern aesthetics and traditional craftsmanship. Highly recommended!",
+                "stars": 5
+            },
+            {
+                "name": "Amitabh Desai",
+                "description": "I wanted something unique for my home office, and Casa Mobilia delivered beyond my imagination. Their attention to detail is fantastic, and the furniture is both stylish and functional.",
+                "stars": 5
+            },
+            {
+                "name": "Priya Malhotra",
+                "description": "The team at Casa Mobilia helped me design my dream bedroom. Every piece is customized to perfection, and the quality is impeccable. Worth every penny!",
+                "stars": 5
+            },
+            {
+                "name": "Karthik Iyer",
+                "description": "Casa Mobilia’s furniture collection is simply stunning. We customized our entire dining room set, and the craftsmanship is top-notch. It feels luxurious and timeless!",
+                "stars": 5
+            },
+            {
+                "name": "Deepika Sinha",
+                "description": "The creativity and expertise at Casa Mobilia are unmatched. Their team helped transform my space into something that feels both modern and classic at the same time. Couldn’t be happier!",
+                "stars": 5
+            },
+            {
+                "name": "Anil Patel",
+                "description": "I’ve bought furniture from many places, but Casa Mobilia stands out for its bespoke designs and excellent customer service. Every piece feels like a work of art!",
+                "stars": 5
+            },
+            {
+                "name": "Shreya Nair",
+                "description": "Casa Mobilia's ability to customize furniture to your exact needs is incredible. They brought my vision to life with elegance and precision. I love my new home interiors!",
+                "stars": 5
+            },
+            {
+                "name": "Sanjay Gupta",
+                "description": "The craftsmanship and quality of Casa Mobilia’s furniture are second to none. The entire experience was professional, and the furniture was delivered on time. Highly recommend for luxury interiors!",
+                "stars": 5
+            },
+            {
+                "name": "Ritu Mehra",
+                "description": "Casa Mobilia offers a unique blend of contemporary and traditional designs. We revamped our entire living space with their bespoke furniture, and it’s nothing short of spectacular!",
+                "stars": 5
+            }
+        ]
+    },
+    "about":{
+        "counter":[
+            {
+                "name":"Projects Done",
+                "number":600
+            },
+            {
+                "name":"Years of Experience",
+                "number":10
+            },
+            {
+                "name":"Clients",
+                "number":250
+            },
+            {
+                "name":"Design Hours",
+                "number":50000
+            }
+        ]
+    },
+    "portfolio":{
+        "productlist": [
+            {
+                "heading": "Commercial Spaces",
+                "subheading": "Transforming businesses with innovative, functional designs that enhance productivity and client engagement.",
+                "images": []
+            },
+            {
+                "heading": "Institutional Projects",
+                "subheading": "Crafting environments that foster learning, collaboration, and innovation for educational and corporate institutions.",
+                "images": []
+            },
+            {
+                "heading": "Industrial Spaces",
+                "subheading": "Designing efficient, safe, and functional interiors that streamline industrial operations.",
+                "images": []
+            },
+            {
+                "heading": "Luxury Residences",
+                "subheading": "Bringing dreams to life with elegant and bespoke designs for high-end homes.",
+                "images": []
+            },
+            {
+                "heading": "Co-working Spaces",
+                "subheading": "Creating dynamic, flexible workspaces that inspire creativity and collaboration.",
+                "images": []
+            },
+            {
+                "heading": "Residential Club Houses",
+                "subheading": "Designing stylish and inviting clubhouses that serve as vibrant community hubs.",
+                "images": []
+            },
+            {
+                "heading": "Swimming Pools",
+                "subheading": "Crafting stunning and serene pool areas that blend beauty with functionality.",
+                "images": []
+            }
+        ]    
+    },
+    "contact": {
+        "address": "Aakarshan Furniture Systems, Plot no- D2/9 Tikona Park, New Industrial Township 2- NIT, Faridabad - 121001, Near Canara Bank",
+        "phone": [
+            "+91-9911375600",
+            "0129-4055600"
+        ],
+        "email": {
+            "sales": [
+                "sales@Casa mobilia.in",
+                "ankit@Casa mobilia.in"
+            ],
+            "vendor": [
+                "ankit@afsfurniture.in",
+                "info@Casa mobilia.in"
+            ],
+            "career": "megha@Casa mobilia.in"
+        }
+    }
+}

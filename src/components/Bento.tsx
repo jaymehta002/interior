@@ -42,15 +42,18 @@ export default function Bento() {
                         <BorderButton text='Aesthetic' group='cardthree'></BorderButton>
                     </div>
                 </BlurFade>
-                <BlurFade y={0} x={20} className=' h-[50%]'>
-                    <a href='/portfolio/outdoor' className=' relative rounded-3xl '>
-                        <div className='  absolute top-5 left-5'>
+                <BlurFade y={0} x={20} className=''>
+                    <a href='/portfolio/outdoor' className='group/card relative rounded-3xl '>
+                        <div className='  absolute top-5 left-5 w-full'>
                             <BorderButton text=' Best Furniture' className=' border-white text-white'></BorderButton>
                         </div>
-                        <Image src={OutDoorSofa} alt='out door sofa' className=' object-cover rounded-3xl h-full'>
-                        </Image>
-                        <div className=' absolute -bottom-3 -right-3  rounded-full p-3 transition-all duration-200 ease-in-out group-hover/cardthree:-translate-x-2 group-hover/cardthree:-translate-y-2 bg-white z-10 size-16'><MoveUpRight className=' group-hover/cardthree:-rotate-90 bg-black p-2 transition-all duration-200 ease-in-out  text-white size-full rounded-full' /></div>
                     </a>
+                    <Image src={OutDoorSofa} alt='out door sofa' className=' object-cover w-full rounded-3xl h-full'>
+                    </Image>
+                    <div className=' absolute -bottom-3 -right-3  rounded-full  p-3 transition-all duration-200 ease-in-out group-hover/cardthree:-translate-x-2 group-hover/cardthree:-translate-y-2 bg-white z-10 size-16'><MoveUpRight className=' group-hover/cardthree:-rotate-90 bg-black p-2 transition-all duration-200 ease-in-out  text-white size-full rounded-full' /></div>
+                    <div className=' absolute left-0 bottom-0 p-5 rounded-b-3xl transition-all duration-200 ease-in-out  group-hover/cardthree:backdrop-blur-lg text-white text-lg backdrop-blur-sm '>
+                        <p className=' rounded-3xl '>Experience luxurious comfort and durability with our elegantly crafted outdoor sofa, designed to elevate your outdoor living space</p>
+                    </div>
                 </BlurFade>
             </div>
         </section>

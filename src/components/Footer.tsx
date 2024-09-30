@@ -36,7 +36,7 @@ export default function Footer() {
           <BlurFade className='text-4xl lg:text-6xl  font-semibold max-w-2xl'>Explore Our Proudly Collection</BlurFade>
           <BlurFade className=' text-left '>Whether you have distinct taste, or a unique space that needs a custom designed piece, our certified Custom Made furniture, will help you get anything made. Browse for ideas including: custom upholstery, custom tables, custom chairs, custom bedroom sets, custom shelves, custom built-ins, and more.</BlurFade>
         </div>
-        <BlurFade className=' mt-10 lg:mt-0'>
+        <BlurFade className=' hidden md:block mt-10 lg:mt-0'>
           <Image src={sofa} alt='sofa' className=' md:h-[18rem] md:w-[28rem] object-cover rounded-2xl '></Image>
         </BlurFade>
       </div>

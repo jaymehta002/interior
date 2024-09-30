@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@react-email/components": "^0.0.25",
+    "@tabler/icons": "^3.19.0",
+    "@tabler/icons-react": "^3.19.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.6",

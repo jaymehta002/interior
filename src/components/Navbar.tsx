@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 // Define the structure for navigation items
@@ -18,33 +18,11 @@ const navigationItems: NavigationItem[] = [
     { name: "Contact", href: "/contact" },
 ];
 // Variants for the navigation bar animation
-const navVariants = {
-    open: {
-        height: "100%",
-        transition: { duration: 0.5, ease: 'easeInOut', type: 'just', stiffness: 50 }
-    },
-    close: {
-        height: "auto",
-        transition: { duration: 0.5, ease: 'easeInOut', type: 'just', stiffness: 50 }
-    },
-    visible: {
-        width: "100%"
-    },
-    resize: {
-        width: "auto"
-    }
-};
+
 
 // NavigationBar component
 export default function NavigationBar() {
-    const { scrollY } = useScroll();
-    const [isResized, setIsResized] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // Update resize state based on scroll position
-    useMotionValueEvent(scrollY, "change", (latest: number) => {
-        setIsResized(latest > 250);
-    });
 
     return (
         <motion.nav
@@ -53,11 +31,7 @@ export default function NavigationBar() {
             transition={{ duration: 0.4, ease: 'easeIn' }}
             className='z-50 top-0 w-full  mx-auto fixed flex justify-center items-center'>
             <motion.div
-                animate={[isResized ? "resize" : "visible", isMenuOpen ? "open" : "close"]}
-                initial={false}
-                transition={{ duration: 0.4, ease: 'easeInOut', type: 'spring', stiffness: 30 }}
-                variants={navVariants}
-                className={cn('w-full bg-white py-2', isResized && "mt-3 border shadow-md rounded-3xl", isMenuOpen && "w-full")}
+                className={cn('w-full bg-white py-2')}
             >
                 <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
                     <a href='/' className='flex gap-2 items-center'>
@@ -72,22 +46,30 @@ export default function NavigationBar() {
                     </div>
                     <MenuToggle isMenuOpen={isMenuOpen} setMenuOpen={setIsMenuOpen} />
                 </div>
+                <AnimatePresence>
                 {isMenuOpen && (
-                    <div className="flex my-16 bg-black/10 dark:bg-white/10 rounded-xl mx-4 flex-col px-5 py-7 gap-5 text-lg font-medium">
+                    <motion.div
+                    initial={{x:'100%'}}
+                    animate={{x:0}}
+                    exit={{x:'100%'}}
+                    transition={{duration:0.8,ease:'easeIn',type:'spring',stiffness:50}}
+                    className="flex h-screen fixed px-16 py-28 bg-white w-full  overflow-hidden dark:bg-white/10 rounded-xl flex-col  gap-5 text-lg font-medium">
                         {navigationItems.map((item, index) => (
                             <motion.a
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ ease: 'easeInOut', duration: 0.3, delay: index * 0.2, stiffness: 50, type: 'spring' }}
-                                className='py-2 rounded-xl border border-black/20 px-4 flex items-center dark:border-white/15 hover:-translate-y-2 ease-in-out duration-150 hover:bg-black hover:text-white shadow dark:hover:bg-white dark:hover:text-black bg-white dark:bg-black'
+                                initial={{x:"100%",opacity:0}}
+                                animate={{x:0,opacity:1}}
+                                exit={{x:"100%",opacity:0}}
+                                transition={{duration:0.3,delay:index*0.2,stiffness:100,type:'spring'}}
+                                className=' text-4xl text-start '
                                 key={index}
                                 href={item.href}
                             >
                                 {item.name}
                             </motion.a>
                         ))}
-                    </div>
+                    </motion.div>
                 )}
+                </AnimatePresence>
             </motion.div>
         </motion.nav>
     );
