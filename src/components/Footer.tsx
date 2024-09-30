@@ -1,7 +1,11 @@
+"use client"
+
 import Image from 'next/image'
 import React from 'react'
 import sofa from '@/../public/sofa1.jpg'
 import BlurFade from './ui/blur-fade'
+import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion';
 
 
 const navigation = {
@@ -28,9 +32,13 @@ const navigation = {
   ],
 }
 
-export default function Footer() {
+export default function Footer({className}:{className?:string}) {
   return (
-    <section className='mt-16 bg-black text-white  p-4 sm:p-10'>
+    <motion.section
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{delay:5}}
+    className={cn('mt-16 bg-black text-white  p-4 sm:p-10',className)}>
       <div className=' flex justify-between lg:flex-row flex-col'>
         <div className=' max-w-xl flex-col flex gap-9 '>
           <BlurFade className='text-4xl lg:text-6xl  font-semibold max-w-2xl'>Explore Our Proudly Collection</BlurFade>
@@ -88,6 +96,6 @@ export default function Footer() {
           </BlurFade>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

@@ -16,9 +16,7 @@ export default function page() {
             At Casa Mobilia, we&rsquo;re here to bring your design visions to life. Whether you&rsquo;re looking for bespoke furniture or interior design solutions, our team is ready to assist you with personalized consultations and expert guidance. Reach out to us today to discuss your project or any inquiries you may have. We look forward to helping you create the perfect space!
           </BlurFade>
         </div>
-        <BlurFade className=' bg-[#f0e9e3] rounded-3xl  '>
-          <Image src={Placeimage} alt='place' className='  rounded-3xl '></Image>
-        </BlurFade>
+       
       </div>
 
       <BlurFade className=' grid grid-cols-1 gap-4 lg:grid-cols-2 mt-16'>

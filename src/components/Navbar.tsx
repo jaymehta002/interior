@@ -27,8 +27,8 @@ export default function NavigationBar() {
     return (
         <motion.nav
             initial={{ y: -20,opacity:0 }}
-            animate={{ y: 0,opacity:1 }}
-            transition={{ duration: 0.4, ease: 'easeIn' }}
+            whileInView={{ y: 0,opacity:1 }}
+            transition={{delay:1.7, ease: 'easeIn' }}
             className='z-50 top-0 w-full  mx-auto fixed flex justify-center items-center'>
             <motion.div
                 className={cn('w-full bg-white py-2')}

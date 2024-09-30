@@ -1,10 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media (max-width: 640px) {
-    .your-class {
-      /* Adjustments for small screens */
-      height: 100vh;
-    }
-  }
