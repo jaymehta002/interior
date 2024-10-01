@@ -19,7 +19,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             setIsLoading(false);
             document.body.style.cursor = 'default'
             window.scrollTo(0, 0);
-          }, 2000)
+          }, 1000)
         }
       )()
     }, [])

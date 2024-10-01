@@ -1,54 +1,53 @@
 "use client";
 
-import Preloader from '@/components/preloader/index';
-import React, { useEffect, useState } from 'react';
-import { AnimatePresence } from "framer-motion";
+import React, { useState } from 'react';
 import { useParams } from 'next/navigation';
 import data from '@/../data/portfolio.json';
-import BlurFade from '@/components/ui/blur-fade';
+import { X } from 'lucide-react';
 
 // Define the type for productlist
 type ProductList = typeof data.portfolio.productlist;
 
 export default function Page() {
-    const [isLoading, setIsLoading] = useState(true);
 
-    // Extract the 'products' parameter from the URL
+    const [open, setopen] = useState(-1)
+
     const params = useParams<{ products: string }>();
     const listname = params.products as keyof ProductList;
 
-    // Safely access the productData by ensuring 'listname' is a valid key
     const productData = data.portfolio.productlist[listname];
 
-    useEffect(() => {
-        // Always run the effect, regardless of conditions in rendering
-        const loadData = async () => {
-            setTimeout(() => {
-                setIsLoading(false);
-                document.body.style.cursor = 'default';
-                window.scrollTo(0, 0);
-            }, 2000);
-        };
-        loadData();
-    }, []);
-
-    // If the productData doesn't exist, return a 401 error message
-    if (!productData) {
-        return <div>401 - Product not found</div>;
-    }
-
-    const imagelist = productData.images;
-
+    const projectslist = productData.projects;
+    console.log(projectslist)
     return (
-        <main className='mt-11 grid lg:grid-cols-3'>
-            <AnimatePresence mode='wait'>
-                {isLoading && <Preloader />}
-            </AnimatePresence>
-            {!isLoading && imagelist.map((image, i) => (
-                <BlurFade key={i}>
-                    <img src={image} alt={`image-${i}`} className='h-full w-full object-cover' />
-                </BlurFade>
-            ))}
+        <main className='mt-11 grid lg:grid-cols-2 gap-10 w-full p-4 lg:p-10'>
+            {
+                projectslist.map((data, index) => (
+                    <>
+                        <button onClick={() => (setopen(data.id))} key={index} className=' relative border shadow-md'>
+                            <h1 className=' absolute bottom-5 left-5 text-4xl font-semibold text-white'>{data.title}</h1>
+                            <img src={data.thumbnail} className=' h-full w-full' alt='thumbnail'></img>
+                        </button>
+                        {
+                            open == data.id && data.images.length>0 &&
+                            <div className=' fixed h-screen w-full mt-16 bg-white z-30 overflow-scroll top-0 left-0 '>
+                                <button onClick={() => (setopen(-1))} className='z-40 bg-white shadow-xl  text-red-500 rounded-full p-3 border fixed bottom-10 left-1/2 -translate-x-1/2'>
+                                    <X />
+                                </button>
+                                <div className=' gird w-full grid-cols-1 lg:grid-cols-2'>
+                                    {
+                                        data.images.map((image, i) => (
+                                            <div className='  ' key={i}>
+                                                <img src={image} alt=' image' className=' h-full w-full'></img>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </>
+                ))
+            }
         </main>
     );
 }

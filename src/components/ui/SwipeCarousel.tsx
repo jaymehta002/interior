@@ -10,7 +10,7 @@ import data from '@/../data/portfolio.json';
 export function AppleCardsCarouselDemo() {
     const productlist = data.portfolio.productlist;
     const cards = Object.entries(productlist).map(([key, product], idx) => (
-        <Card subheading={product.subheading} key={key} title={product.heading} href={key} src={product.images[1]} index={idx} />
+        <Card subheading={product.subheading} key={key} title={product.heading} href={key} src={product.thumbnail1} index={idx} />
     ));
 
     return (
