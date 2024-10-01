@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 import './loading.css'
 
-const words = ["Casa Mobilia", "Commercial Spaces", "Luxury Residences", "Co-working Spaces", "Residential Club Houses", "Swimming Pools", "Industrial Spaces"]
+const words = ["Casa Mobilia", "Commercial Spaces", "Luxury Residences", "Co-working Spaces", "luxuryresidences Club Houses", "Swimming Pools", "Industrial Spaces"]
 
 export default function Index() {
     const [index, setIndex] = useState(0);
@@ -40,9 +40,9 @@ export default function Index() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 &&
                 <>
-                    <motion.p variants={opacity} initial="initial" className=' flex-col' animate="enter">
+                    <motion.p variants={opacity} initial="initial" className=' flex-col text-2xl md:text-4xl font-bold' animate="enter">
                         {words[index]}
-                        <div className="loader">
+                        <div className="loader mt-14">
                             <div></div>
                             <div></div>
                             <div></div>

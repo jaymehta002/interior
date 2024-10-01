@@ -130,15 +130,15 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => {
     return (
         <div
-            className={`card-shadow shadow-lg bg-white dark:bg-black dark:shadow-inner dark:shadow-white/30 p-5 dark:border-neutral-90 relative flex h-auto max-w-[16rem] select-none flex-col items-baseline py-5 justify-center overflow-hidden rounded-2xl border transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-5`}
+            className={`card-shadow shadow-lg bg-stone-100 dark:bg-black dark:shadow-inner dark:shadow-white/30 p-5 dark:border-neutral-90 relative flex h-auto max-w-[16rem] select-none flex-col items-baseline py-5 justify-center overflow-hidden rounded-2xl border transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-5`}
         >
             <p className="mt-3 text-left text-sm font-light text-gray-600 md:text-base dark:text-gray-400">
                 {description}
             </p>
             <div className='w-full mt-4 flex justify-between'>
-                    <h3 className="m-0 text-sm font-semibold text-gray-900 dark:text-gray-100">
-                        {name}
-                    </h3>
+                <h3 className="m-0 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                    {name}
+                </h3>
                 <div className='flex -translate-x-1 mb-0 justify-between items-center'>
                     {Array(5).fill(0).map((_, index) => (
                         <svg key={index} className={cn("w-3 h-3 ms-1", index + 1 <= stars ? "text-yellow-300" : "text-gray-300 dark:text-gray-500")} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">

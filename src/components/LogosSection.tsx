@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import data from '@/app/data.json'
+import data from '@/../data/home.json'
 
 
 const logos = data.home.brands;
@@ -89,7 +89,7 @@ const LogoCarousel = () => (
 );
 
 const LogoProof = () => (
-    <section className="w-full py-12 flex flex-col items-center">
+    <section className="w-full py-12 overflow-hidden flex flex-col items-center">
         <motion.div
             className="max-w-2xl"
             initial="hidden"
@@ -114,7 +114,7 @@ const LogoProof = () => (
             initial="hidden"
             animate="show"
             transition={{ duration: 1, type: 'spring', stiffness: 150 }}
-            className="mx-auto w-full px-4 md:px-8 max-w-4xl"
+            className="mx-auto w-full overflow-hidden px-4 md:px-8 max-w-4xl"
         >
             <LogoCarousel />
         </motion.div>

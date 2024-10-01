@@ -23,13 +23,13 @@ export default function Bento() {
                     Your browser does not support the video tag.
                 </video>
                 <div className=' absolute bottom-0  w-[60%] lg:w-[40%] left-0'>
-                    <div className=' w-[60%] rounded-se-2xl flex items-start bg-white  pt-3 pr-2 lg:pt-3 lg:pr-6'>
+                    <div className=' w-[60%] rounded-se-2xl flex items-start bg-stone-100  pt-3 pr-2 lg:pt-3 lg:pr-6'>
                         <BorderButton text='Georgeus Interior' className=' text-xs'></BorderButton>
                     </div>
-                    <div className=' text-2xl lg:text-6xl font-semibold w-[80%] rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+                    <div className=' text-2xl lg:text-6xl font-semibold w-[80%] rounded-se-2xl flex items-start bg-stone-100  pt-1 pr-2 lg:pt-3 lg:pr-6'>
                         Modern
                     </div>
-                    <div className=' text-2xl lg:text-6xl font-semibold w-full rounded-se-2xl flex items-start bg-white  pt-1 pr-2 lg:pt-3 lg:pr-6'>
+                    <div className=' text-2xl lg:text-6xl font-semibold w-full rounded-se-2xl flex items-start bg-stone-100  pt-1 pr-2 lg:pt-3 lg:pr-6'>
                         Minimalist
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export default function Bento() {
                     </a>
                     <Image src={OutDoorSofa} alt='out door sofa' className=' object-cover w-full rounded-3xl h-full'>
                     </Image>
-                    <div className=' absolute -bottom-3 -right-3  rounded-full  p-3 transition-all duration-200 ease-in-out group-hover/cardthree:-translate-x-2 group-hover/cardthree:-translate-y-2 bg-white z-10 size-16'><MoveUpRight className=' group-hover/cardthree:-rotate-90 bg-black p-2 transition-all duration-200 ease-in-out  text-white size-full rounded-full' /></div>
+                    <div className=' absolute -bottom-3 -right-3  rounded-full  p-3 transition-all duration-200 ease-in-out group-hover/cardthree:-translate-x-2 group-hover/cardthree:-translate-y-2 bg-stone-100 z-10 size-16'><MoveUpRight className=' group-hover/cardthree:-rotate-90 bg-black p-2 transition-all duration-200 ease-in-out  text-white size-full rounded-full' /></div>
                     <div className=' absolute left-0 bottom-0 p-5 rounded-b-3xl transition-all duration-200 ease-in-out  group-hover/cardthree:backdrop-blur-lg text-white text-lg backdrop-blur-sm '>
                         <p className=' rounded-3xl '>Experience luxurious comfort and durability with our elegantly crafted outdoor sofa, designed to elevate your outdoor living space</p>
                     </div>

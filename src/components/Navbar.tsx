@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import { AnimatePresence, motion} from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import Texthover from './ui/texthover';
 
 // Define the structure for navigation items
 interface NavigationItem {
@@ -26,12 +27,12 @@ export default function NavigationBar() {
 
     return (
         <motion.nav
-            initial={{ y: -20,opacity:0 }}
-            whileInView={{ y: 0,opacity:1 }}
-            transition={{delay:1.7, ease: 'easeIn' }}
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5, ease: 'easeIn' }}
             className='z-50 top-0 w-full  mx-auto fixed flex justify-center items-center'>
             <motion.div
-                className={cn('w-full bg-white py-2')}
+                className={cn('w-full bg-stone-100 py-2')}
             >
                 <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
                     <a href='/' className='flex gap-2 items-center'>
@@ -39,36 +40,38 @@ export default function NavigationBar() {
                     </a>
                     <div className="hidden md:flex items-center gap-4 text-base font-medium">
                         {navigationItems.map((item, index) => (
-                            <a className='opacity-85 hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
-                                {item.name}
-                            </a>
+                            <Texthover text={item.name} className='opacity-85 hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
+
+                            </Texthover>
                         ))}
                     </div>
                     <MenuToggle isMenuOpen={isMenuOpen} setMenuOpen={setIsMenuOpen} />
                 </div>
                 <AnimatePresence>
-                {isMenuOpen && (
-                    <motion.div
-                    initial={{x:'100%'}}
-                    animate={{x:0}}
-                    exit={{x:'100%'}}
-                    transition={{duration:0.8,ease:'easeIn',type:'spring',stiffness:50}}
-                    className="flex h-screen fixed px-16 py-28 bg-white w-full  overflow-hidden dark:bg-white/10 rounded-xl flex-col  gap-5 text-lg font-medium">
-                        {navigationItems.map((item, index) => (
-                            <motion.a
-                                initial={{x:"100%",opacity:0}}
-                                animate={{x:0,opacity:1}}
-                                exit={{x:"100%",opacity:0}}
-                                transition={{duration:0.3,delay:index*0.2,stiffness:100,type:'spring'}}
-                                className=' text-4xl text-start '
-                                key={index}
-                                href={item.href}
-                            >
-                                {item.name}
-                            </motion.a>
-                        ))}
-                    </motion.div>
-                )}
+                    {isMenuOpen && (
+                        <motion.div
+                            initial={{ x: '100%' }}
+                            animate={{ x: 0 }}
+                            exit={{ x: '100%' }}
+                            transition={{ duration: 0.8, ease: 'easeIn', type: 'spring', stiffness: 50 }}
+                            className="flex h-screen fixed px-16 py-28 bg-stone-100 w-full  overflow-hidden dark:bg-stone-100/10 rounded-xl flex-col  gap-5 text-lg font-medium">
+                            {navigationItems.map((item, index) => (
+                                <motion.a
+                                    initial={{ x: "100%", opacity: 0 }}
+                                    animate={{ x: 0, opacity: 1 }}
+                                    exit={{ x: "100%", opacity: 0 }}
+                                    transition={{ duration: 0.3, delay: index * 0.2, stiffness: 100, type: 'spring' }}
+                                    className=' text-4xl text-start '
+                                    key={index}
+
+                                >
+                                    <Texthover text={item.name} href={item.href}>
+
+                                    </Texthover>
+                                </motion.a>
+                            ))}
+                        </motion.div>
+                    )}
                 </AnimatePresence>
             </motion.div>
         </motion.nav>

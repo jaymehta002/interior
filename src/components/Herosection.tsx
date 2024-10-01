@@ -6,20 +6,20 @@ import backgroundimage from '@/../public/krishnakunj2.jpg'
 import Button from './ui/Button'
 import Textslide from './ui/textslide'
 import GradualSpacing from './ui/gradual-spacing'
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 export default function Herosection() {
+  const { scrollYProgress } = useScroll()
+  const y=useTransform(scrollYProgress,[0,1],["0%","250%"])
   return (
-    <section className="relative h-screen w-full mt-16 sm:mt-7 ">
+    <section  className="relative overflow-hidden rounded-3xl h-screen w-full mt-10 sm:mt-7 ">
       <motion.div
-      initial={{filter:'blur(5px)'}}
-      animate={{filter:'blur(0px)'}}
-      transition={{duration:0.5,ease:'easeInOut'}}
-      className=' h-full w-full absolute p-4 sm:p-10  overflow-hidden'>
+      style={{y:y}}
+      className=' h-full w-full absolute rounded-3xl p-4 sm:p-10  overflow-hidden'>
         <Image src={backgroundimage} alt='background image' className='image border h-full w-full rounded-3xl object-cover object-center'></Image>
       </motion.div>
-      <div className=' h-full w-full  flex flex-col  p-4 sm:p-10'>
+      <div className=' h-full w-full overflow-hidden flex flex-col  p-4 sm:p-10'>
         <div className=' h-[70%] w-full flex justify-center items-center'>
           <GradualSpacing text='Contemporary' className=' text-white z-10 text-4xl lg:text-9xl font-bold'></GradualSpacing>
         </div>

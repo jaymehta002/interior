@@ -1,20 +1,20 @@
 {
-    "home":{
-        "brands":[
+    "home": {
+        "brands": [
             {
-                "name":"Lingel",
-                "logo":"/brandslogo/logo4.png"
+                "name": "Lingel",
+                "logo": "/brandslogo/brand1.png"
             },
             {
-                "name":"Geeken",
-                "logo":"/brandslogo/logo2.png"
+                "name": "Geeken",
+                "logo": "/brandslogo/brand2.png"
             },
             {
-                "name":"King Koil",
-                "logo":"/brandslogo/logo5.png"
+                "name": "King Koil",
+                "logo": "/brandslogo/brand3.png"
             }
         ],
-        "testimonial":[
+        "testimonial": [
             {
                 "name": "Rohit Sharma",
                 "description": "Casa Mobilia truly exceeded my expectations! The quality of their bespoke furniture is unmatched, and the customization options are endless. My living room has never looked better!",
@@ -66,82 +66,6 @@
                 "stars": 5
             }
         ]
-    },
-    "about":{
-        "counter":[
-            {
-                "name":"Projects Done",
-                "number":600
-            },
-            {
-                "name":"Years of Experience",
-                "number":10
-            },
-            {
-                "name":"Clients",
-                "number":250
-            },
-            {
-                "name":"Design Hours",
-                "number":50000
-            }
-        ]
-    },
-    "portfolio":{
-        "productlist": [
-            {
-                "heading": "Commercial Spaces",
-                "subheading": "Transforming businesses with innovative, functional designs that enhance productivity and client engagement.",
-                "images": []
-            },
-            {
-                "heading": "Institutional Projects",
-                "subheading": "Crafting environments that foster learning, collaboration, and innovation for educational and corporate institutions.",
-                "images": []
-            },
-            {
-                "heading": "Industrial Spaces",
-                "subheading": "Designing efficient, safe, and functional interiors that streamline industrial operations.",
-                "images": []
-            },
-            {
-                "heading": "Luxury Residences",
-                "subheading": "Bringing dreams to life with elegant and bespoke designs for high-end homes.",
-                "images": []
-            },
-            {
-                "heading": "Co-working Spaces",
-                "subheading": "Creating dynamic, flexible workspaces that inspire creativity and collaboration.",
-                "images": []
-            },
-            {
-                "heading": "Residential Club Houses",
-                "subheading": "Designing stylish and inviting clubhouses that serve as vibrant community hubs.",
-                "images": []
-            },
-            {
-                "heading": "Swimming Pools",
-                "subheading": "Crafting stunning and serene pool areas that blend beauty with functionality.",
-                "images": []
-            }
-        ]    
-    },
-    "contact": {
-        "address": "Aakarshan Furniture Systems, Plot no- D2/9 Tikona Park, New Industrial Township 2- NIT, Faridabad - 121001, Near Canara Bank",
-        "phone": [
-            "+91-9911375600",
-            "0129-4055600"
-        ],
-        "email": {
-            "sales": [
-                "sales@Casa mobilia.in",
-                "ankit@Casa mobilia.in"
-            ],
-            "vendor": [
-                "ankit@afsfurniture.in",
-                "info@Casa mobilia.in"
-            ],
-            "career": "megha@Casa mobilia.in"
-        }
     }
+    
 }

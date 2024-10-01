@@ -4,14 +4,17 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import BlurFade from "./blur-fade";
 import Button from "./Button";
+import data from '@/../data/portfolio.json';
+
 
 export function AppleCardsCarouselDemo() {
-    const cards = data.map((card, index) => (
-        <Card key={card.src} card={card} index={index} />
+    const productlist = data.portfolio.productlist;
+    const cards = Object.entries(productlist).map(([key, product], idx) => (
+        <Card key={key} title={product.heading}  src={product.images[1]} index={idx} />
     ));
 
     return (
-        <div className="w-full h-full  mt-10 ">
+        <div className="w-full h-full overflow-hidden my-10 ">
             <div className='flex lg:flex-row sm:px-14 px-4 flex-col gap-3 justify-between'>
                 <BlurFade y={0} x={-30} className='text-3xl lg:text-6xl  font-semibold max-w-2xl'>Explore Our Proudly Collection</BlurFade>
                 <div className=' max-w-xl space-y-3'>
@@ -24,31 +27,3 @@ export function AppleCardsCarouselDemo() {
     );
 }
 
-
-const data = [
-    {
-        category: "Artificial Intelligence",
-        title: "You can do more with AI.",
-        src: "/sofa2.jpg",
-    },
-    {
-        category: "Productivity",
-        title: "Enhance your productivity.",
-        src: "/office/10.jpg",
-    },
-    {
-        category: "Product",
-        title: "Launching the new Apple Vision Pro.",
-        src: "/residential/15.webp",
-    },
-    {
-        category: "Product",
-        title: "Launching the new Apple Vision Pro.",
-        src: "/outdoor/2.jpg",
-    },
-    {
-        category: "Product",
-        title: "Launching the new Apple Vision Pro.",
-        src: "/office/2.jpg",
-    },
-];
