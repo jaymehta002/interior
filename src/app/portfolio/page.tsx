@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
 import sofa from '@/../public/luxuryresidences/15.webp';
-import Button from '@/components/ui/Button';
 import BlurFade from '@/components/ui/blur-fade';
 import ProductsList from '@/components/ProductsList';
 import { useScroll, useTransform, motion } from 'framer-motion';
