@@ -12,6 +12,12 @@
                     "/commercialspaces/7.jpg",
                     "/commercialspaces/9.jpg",
                     "/commercialspaces/10.jpg"
+                ],
+                "projects":[
+                    {
+                        "title":"google"
+                        
+                    }
                 ]
             },
             "institutionalprojects": {

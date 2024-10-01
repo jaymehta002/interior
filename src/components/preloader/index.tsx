@@ -42,13 +42,13 @@ export default function Index() {
                 <>
                     <motion.p variants={opacity} initial="initial" className=' flex-col text-2xl md:text-4xl font-bold' animate="enter">
                         {words[index]}
-                        <div className="loader mt-14">
+                        {/* <div className="loader  mt-14">
                             <div></div>
                             <div></div>
                             <div></div>
                             <div></div>
                             <div></div>
-                        </div>
+                        </div> */}
                     </motion.p>
                     <svg>
                         <motion.path variants={curve} initial="initial" exit="exit"></motion.path>

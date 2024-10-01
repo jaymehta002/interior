@@ -32,7 +32,7 @@ export default function NavigationBar() {
             transition={{ delay: 0.5, ease: 'easeIn' }}
             className='z-50 top-0 w-full  mx-auto fixed flex justify-center items-center'>
             <motion.div
-                className={cn('w-full bg-stone-100 py-2')}
+                className={cn('w-full bg-[#FAF9F6] py-2')}
             >
                 <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
                     <a href='/' className='flex gap-2 items-center'>
