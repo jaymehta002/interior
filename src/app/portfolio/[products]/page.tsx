@@ -30,20 +30,23 @@ export default function Page() {
                         </button>
                         {
                             open == data.id && data.images.length>0 &&
-                            <div className=' fixed h-screen w-full mt-16 bg-white z-30 overflow-scroll top-0 left-0 '>
-                                <button onClick={() => (setopen(-1))} className='z-40 bg-white shadow-xl  text-red-500 rounded-full p-3 border fixed bottom-10 left-1/2 -translate-x-1/2'>
-                                    <X />
-                                </button>
-                                <div className=' gird w-full grid-cols-1 lg:grid-cols-2'>
-                                    {
-                                        data.images.map((image, i) => (
-                                            <div className='  ' key={i}>
-                                                <img src={image} alt=' image' className=' h-full w-full'></img>
-                                            </div>
-                                        ))
-                                    }
-                                </div>
+                            <div className='fixed h-screen w-full mt-16 bg-white z-30 overflow-scroll top-0 left-0'>
+                            <button
+                              onClick={() => setopen(-1)}
+                              className='z-40 bg-white shadow-xl text-red-500 rounded-full p-3 border fixed bottom-10 left-1/2 -translate-x-1/2'
+                            >
+                              <X />
+                            </button>
+                            <div className='grid w-full grid-cols-1 lg:grid-cols-2'>
+                              {
+                                data.images.map((image, i) => (
+                                  <div key={i}>
+                                    <img src={image} alt='image' className='h-full w-full' />
+                                  </div>
+                                ))
+                              }
                             </div>
+                          </div>
                         }
                     </>
                 ))

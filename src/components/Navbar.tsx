@@ -34,7 +34,7 @@ export default function NavigationBar() {
             <motion.div
                 className={cn('w-full bg-[#FAF9F6] py-2')}
             >
-                <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
+                <div className='w-full px-4 md:px-11 flex justify-between items-center gap-44 sm:gap-24'>
                     <a href='/' className='flex gap-2 items-center'>
                         <img src="/logo.png" className="w-[5.7rem] h-11 font-semibold" alt="Logo" />
                     </a>

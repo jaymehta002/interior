@@ -59,7 +59,7 @@ export default function Page() {  // Changed to uppercase 'P'
               <a href="tel:+911294055600">0129-4055600</a>
             </div>
           </div>
-          <div className=' grid gap-4 grid-cols-2'>
+          <div className=' grid gap-4 grid-cols-1 lg:grid-cols-2'>
           <div className='flex border py-6 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />

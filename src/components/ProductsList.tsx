@@ -17,12 +17,12 @@ export default function ProductsList() {
                             <p className=' text-lg '>{product.subheading}</p>
                         </div>
                     </a>
-                    {product.images.length > 0 && (
+                    {product.thumbnail2.length > 0 && (
                         <img
                             style={{
                                 maskImage: `linear-gradient(to top, transparent, black 80%)`,
                             }}
-                            src={product.images[0]}
+                            src={product.thumbnail2}
                             alt={product.heading}
                             className='h-full object-cover rounded-3xl left-0 top-0 w-full'
                         />
