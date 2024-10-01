@@ -38,7 +38,7 @@ export default function Page() {  // Changed to uppercase 'P'
           <Contact />
         </div>
         <div className='rounded-2xl max-w-2xl space-y-5'>
-          <div className='flex border py-4 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
+          <div className='flex border py-6 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <MapPin />
             </div>
@@ -47,7 +47,7 @@ export default function Page() {  // Changed to uppercase 'P'
               <p className='text-lg'>Aakarshan Furniture Systems, Plot no- D2/9 Tikona Park, New Industrial Township 2- NIT, Faridabad - 121001, Near Canara Bank</p>
             </div>
           </div>
-          <div className='flex border py-4 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
+          <div className='flex border py-6 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Phone />
             </div>
@@ -59,7 +59,8 @@ export default function Page() {  // Changed to uppercase 'P'
               <a href="tel:+911294055600">0129-4055600</a>
             </div>
           </div>
-          <div className='flex border py-4 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
+          <div className=' grid gap-4 grid-cols-2'>
+          <div className='flex border py-6 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />
             </div>
@@ -71,7 +72,7 @@ export default function Page() {  // Changed to uppercase 'P'
               <a href="mailto:ankit@Casa mobilia.in">ankit@Casa mobilia.in</a>
             </div>
           </div>
-          <div className='flex border py-4 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
+          <div className='flex border py-6 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />
             </div>
@@ -83,7 +84,8 @@ export default function Page() {  // Changed to uppercase 'P'
               <a href="mailto:info@Casa mobilia.in">info@Casa mobilia.in</a>
             </div>
           </div>
-          <div className='flex border py-4 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
+          </div>
+          <div className='flex border py-6 px-11 rounded-3xl bg-white shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />
             </div>

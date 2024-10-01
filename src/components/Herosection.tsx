@@ -24,7 +24,7 @@ export default function Herosection() {
       </motion.div>
       <div className=' h-full w-full overflow-hidden flex flex-col  p-4 sm:p-10'>
         <div className=' h-[70%] w-full flex justify-center items-center'>
-          <GradualSpacing text='Contemporary' className=' text-white z-10 text-4xl lg:text-9xl font-bold'></GradualSpacing>
+          <GradualSpacing text='Contemporary' className=' text-white z-10 text-5xl lg:text-9xl font-bold'></GradualSpacing>
         </div>
         <div className=' mb-5 sm:mb-0'>
           <div className=' px-3 flex gap-6 flex-col md:flex-row'>
