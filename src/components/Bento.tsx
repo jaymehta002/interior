@@ -43,7 +43,7 @@ export default function Bento() {
                     </div>
                 </BlurFade>
                 <BlurFade y={0} x={20} className=''>
-                    <a href='/portfolio/outdoor' className='group/card border shadow-md  relative rounded-3xl '>
+                    <a href='/portfolio/outdoor' className='group/card   relative rounded-3xl '>
                         <div className='  absolute top-5 left-5 w-full'>
                             <BorderButton text=' Best Furniture' className=' border-white text-white'></BorderButton>
                         </div>
