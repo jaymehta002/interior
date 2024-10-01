@@ -53,17 +53,8 @@ const OpenCards = () => {
                     transition={{ duration: 0.5 }}
                     onClick={() => handleCardClick(index)}
                 >
-                    <Image alt={data.title} className=' absolute object-cover rounded-3xl h-full w-full ' src={data.image}></Image>
-                    <div className='card-content z-30 h-full flex flex-col justify-end'>
-                        <div className='card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center'>
-                            <h2 className='text-xl font-semibold text-black text-center'>Card {index + 1}</h2>
-                            {index === expandedIndex && (
-                                <p className='mt-2 text-lg text-center'>{data.title} </p>
-                            )
-
-                            }
-                        </div>
-                    </div>
+                    <Image alt={data.title} className='border shadow-md absolute object-cover rounded-3xl h-full w-full ' src={data.image}></Image>
+                    
                 </motion.div>
             ))}
         </div>

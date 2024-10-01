@@ -22,16 +22,16 @@ export default function Heroabout() {
         <motion.section style={{y:y,scale:scale,opacity:opacity}} ref={ref} className=' grid grid-cols-1 gap-5 lg:grid-cols-2 mt-5 p-4 sm:p-10 '>
             <div className=' grid grid-cols-2 gap-3'>
                 <BlurFade y={0} x={-50} className=' w-full h-full '>
-                    <Image src={Sideimage1} alt='sofa image' className='object-cover h-full w-full order-2 rounded-3xl border' ></Image>
+                    <Image src={Sideimage1} alt='sofa image' className='object-cover shadow-md h-full w-full order-2 rounded-3xl border' ></Image>
                 </BlurFade>
                 <BlurFade y={0} x={50} className=' w-full h-full '>
-                    <Image src={Sideimage2} alt='sofa image' className='object-cover h-full w-full order-2 rounded-3xl border' ></Image>
+                    <Image src={Sideimage2} alt='sofa image' className='object-cover shadow-md h-full w-full order-2 rounded-3xl border' ></Image>
                 </BlurFade>
                 <BlurFade y={0} x={-50} className=' w-full h-full '>
-                    <Image src={Sideimage4} alt='sofa image' className='object-cover h-[85%] w-full order-2 rounded-3xl border' ></Image>
+                    <Image src={Sideimage4} alt='sofa image' className='object-cover shadow-md h-[85%] w-full order-2 rounded-3xl border' ></Image>
                 </BlurFade>
                 <BlurFade y={0} x={50} className=' w-full h-full '>
-                    <Image src={Sideimage3} alt='sofa image' className='object-cover h-[85%] w-full order-2 rounded-3xl border' ></Image>
+                    <Image src={Sideimage3} alt='sofa image' className='object-cover shadow-md h-[85%] w-full order-2 rounded-3xl border' ></Image>
                 </BlurFade>
             </div>
             <div className=' lg:p-4 sm:p-10 flex flex-col order-1 gap-5 '>
@@ -40,9 +40,9 @@ export default function Heroabout() {
                 <BlurFade>
                     Casa Mobilia creates luxury bespoke furniture and timeless interiors, combining global refinement with indigenous design. Founded in 2012, we offer unique, customizable pieces that reflect exceptional craftsmanship. Our designs transform spaces, blending contemporary and classic styles for a truly personalized living experience.
                 </BlurFade>
-                <BlurFade>
+                <a href='/about'>
                     <Button text='About Us'></Button>
-                </BlurFade>
+                </a>
             </div>
         </motion.section>
     )

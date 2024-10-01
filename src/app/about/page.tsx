@@ -47,9 +47,9 @@ export default function Page() {  // Renamed to Page
       <div className='flex'>
         <BlurFade className='text-4xl sm:text-6xl lg:text-8xl justify-center items-center font-extrabold flex flex-wrap max-w-4xl mx-auto gap-5 sm:gap-10 text-center'>
           Casa mobilia
-          <Image src={textimage1} alt='sofa image' className='w-28 h-16 sm:w-40 sm:h-24 object-cover flex rounded-2xl sm:rounded-3xl'></Image>
+          <Image src={textimage1} alt='sofa image' className='w-28 h-16 border shadow-lg sm:w-40 sm:h-24 object-cover flex rounded-2xl sm:rounded-3xl'></Image>
           is 
-          <Image src={textimage2} alt='sofa image' className='w-28 h-16 sm:w-40 sm:h-24 object-cover flex rounded-2xl sm:rounded-3xl'></Image>
+          <Image src={textimage2} alt='sofa image' className='w-28 h-16 border shadow-lg sm:w-40 sm:h-24 object-cover flex rounded-2xl sm:rounded-3xl'></Image>
           <span className='flex flex-wrap'>Known for </span>Innovative
         </BlurFade>
       </div>
@@ -59,13 +59,13 @@ export default function Page() {  // Renamed to Page
 
       <div className='hidden lg:grid grid-cols-7 gap-4 md:gap-6 mt-8'>
         <BlurFade x={-30} className='col-span-2'>
-          <Image src={image1} alt='image' className='object-cover rounded-3xl h-80 w-full'></Image>
+          <Image src={image1} alt='image' className='object-cover rounded-3xl border shadow-md h-80 w-full'></Image>
         </BlurFade>
         <BlurFade className='col-span-3'>
-          <Image src={image3} alt='image' className='object-cover rounded-3xl h-80 w-full'></Image>
+          <Image src={image3} alt='image' className='object-cover rounded-3xl border shadow-md h-80 w-full'></Image>
         </BlurFade>
         <BlurFade y={0} x={30} className='col-span-2'>
-          <Image src={image2} alt='image' className='object-cover rounded-3xl h-80 w-full'></Image>
+          <Image src={image2} alt='image' className='object-cover rounded-3xl border shadow-md h-80 w-full'></Image>
         </BlurFade>
       </div>
 
@@ -76,7 +76,7 @@ export default function Page() {  // Renamed to Page
         </BlurFade>
         <motion.div ref={ref} style={{ y: y, opacity }} className='grid grid-cols-1 md:grid-cols-3 gap-7'>
           <BlurFade className='w-full mx-auto relative rounded-3xl col-span-1 flex justify-center'>
-            <Image src={profile} alt='profile' className='w-full md:w-80 rounded-2xl object-cover h-[26rem]'></Image>
+            <Image src={profile} alt='profile' className='border shadow-md w-full md:w-80 rounded-2xl object-cover h-[26rem]'></Image>
           </BlurFade>
           <div className='rounded-3xl col-span-2'>
             <BlurFade className='rounded-2xl object-cover lg:h-[26rem] px-3 flex gap-8 justify-center flex-col'>

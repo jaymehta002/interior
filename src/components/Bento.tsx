@@ -17,7 +17,7 @@ export default function Bento() {
                     muted
                     preload="none"
                     style={{ display: 'block' }}
-                    className=" rounded-3xl h-full w-full object-cover border"
+                    className=" rounded-3xl border shadow-md h-full w-full object-cover border"
                 >
                     <source src="/logoreveal.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -35,7 +35,7 @@ export default function Bento() {
                 </div>
             </BlurFade>
             <div className=' md:col-span-4 flex flex-col gap-5 group/cardthree'>
-                <BlurFade y={0} x={20} className=' bg-[#f0e9e3] flex flex-col justify-between relative rounded-3xl gap-3 p-8'>
+                <BlurFade y={0} x={20} className='border shadow-md bg-[#f0e9e3] flex flex-col justify-between relative rounded-3xl gap-3 p-8'>
                     <p>Aesthetic furniture where every piece tells a story of style</p>
                     <p className=' font-bold text-4xl'>Into a gallery of elegance</p>
                     <div>
@@ -43,7 +43,7 @@ export default function Bento() {
                     </div>
                 </BlurFade>
                 <BlurFade y={0} x={20} className=''>
-                    <a href='/portfolio/outdoor' className='group/card relative rounded-3xl '>
+                    <a href='/portfolio/outdoor' className='group/card border shadow-md relative rounded-3xl '>
                         <div className='  absolute top-5 left-5 w-full'>
                             <BorderButton text=' Best Furniture' className=' border-white text-white'></BorderButton>
                         </div>

@@ -7,6 +7,7 @@ import Button from '@/components/ui/Button';
 import BlurFade from '@/components/ui/blur-fade';
 import ProductsList from '@/components/ProductsList';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import BorderButton from '@/components/ui/BorderButton';
 
 export default function Page() {  // Changed 'page' to 'Page'
   const ref = useRef(null);
@@ -22,7 +23,7 @@ export default function Page() {  // Changed 'page' to 'Page'
   return (
     <section className='p-4 sm:p-10 mt-14 text-stone-900 overflow-hidden'>
       <motion.div ref={ref} style={{ y: y, opacity: opacity, scale }} className=' w-full h-1/2 lg:h-[30rem]'>
-        <Image src={sofa} alt='sofa' className='object-cover w-full flex h-1/2 lg:h-[30rem] rounded-2xl sm:rounded-3xl' />
+        <Image src={sofa} alt='sofa' className='border shadow-lg object-cover w-full flex h-1/2 lg:h-[30rem] rounded-2xl sm:rounded-3xl' />
       </motion.div>
       <div className='grid-cols-1 lg:grid-cols-2 grid py-16 gap-10'>
         <div>
@@ -33,7 +34,7 @@ export default function Page() {  // Changed 'page' to 'Page'
             Crafting spaces that harmonize modern aesthetics with timeless elegance, our contemporary interior designs breathe life into every room, redefining the essence of chic living.
           </p>
           <div>
-            <Button text='Explore More' />
+            <BorderButton text='Explore More' className=' bg-black text-white border-black shadow-md' />
           </div>
         </BlurFade>
       </div>

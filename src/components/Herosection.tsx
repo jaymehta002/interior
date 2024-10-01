@@ -19,8 +19,8 @@ export default function Herosection() {
     <section  className="relative overflow-hidden rounded-3xl h-screen w-full mt-10 sm:mt-7 ">
       <motion.div
       style={{y:y,opacity:opacity,scale:scale}}
-      className=' h-full w-full absolute rounded-3xl p-4 sm:p-10  overflow-hidden'>
-        <Image src={backgroundimage} alt='background image' className='image border h-full w-full rounded-3xl object-cover object-center'></Image>
+      className=' h-full w-full absolute rounded-3xl border shadow-md p-4 sm:p-10  overflow-hidden'>
+        <Image src={backgroundimage} alt='background image' className='image border shadow-md h-full w-full rounded-3xl object-cover object-center'></Image>
       </motion.div>
       <div className=' h-full w-full overflow-hidden flex flex-col  p-4 sm:p-10'>
         <div className=' h-[70%] w-full flex justify-center items-center'>
@@ -32,7 +32,7 @@ export default function Herosection() {
               <p className=' text-wrap text-white '>
                 Blending modern aesthetics with timeless elegance, our bespoke furniture designs transform spaces, redefining the art of sophisticated living.
               </p>
-              <a href='/portfolio/livingspace'>
+              <a href='/portfolio'>
                 <Button text='View More '></Button>
               </a>
             </Textslide>
