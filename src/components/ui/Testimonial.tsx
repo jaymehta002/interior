@@ -130,13 +130,13 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => {
     return (
         <div
-            className={`card-shadow shadow-md p-5 relative flex h-auto max-w-[16rem] select-none flex-col items-baseline py-5 justify-center overflow-hidden rounded-2xl border transition-all duration-300 ease-in-out hover:-translate-y-5`}
+            className={`card-shadow shadow-md p-5 bg-white/60 backdrop-blur-xl border-black/10  relative flex h-auto max-w-[16rem] select-none flex-col items-baseline py-5 justify-center overflow-hidden rounded-2xl border transition-all duration-300 ease-in-out hover:-translate-y-5`}
         >
-            <p className="mt-3 text-left text-sm font-light text-gray-600 md:text-base :text-gray-400">
+            <p className="mt-3 text-left text-sm font-light md:text-base :text-gray-400">
                 {description}
             </p>
             <div className='w-full mt-4 flex justify-between'>
-                <h3 className="m-0 text-sm font-semibold text-gray-900 :text-gray-100">
+                <h3 className="m-0 text-sm font-semibold ">
                     {name}
                 </h3>
                 <div className='flex -translate-x-1 mb-0 justify-between items-center'>

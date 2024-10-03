@@ -33,7 +33,7 @@ export default function Herosection() {
                 Blending modern aesthetics with timeless elegance, our bespoke furniture designs transform spaces, redefining the art of sophisticated living.
               </p>
               <a href='/portfolio'>
-                <Button text='View More '></Button>
+                <Button text='View More ' ></Button>
               </a>
             </Textslide>
             <Textslide y={40} className=' bg-black/5 p-3 border-white/60  rounded-xl backdrop-blur-2xl border shadow-sm'>

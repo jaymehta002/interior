@@ -22,7 +22,7 @@ export default function Page() {  // Changed to uppercase 'P'
   }, [])
 
   return (
-    <section className='p-4 sm:p-10 mt-14 text-stone-900'>
+    <section className='p-4 sm:p-10 mt-14 '>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -38,7 +38,7 @@ export default function Page() {  // Changed to uppercase 'P'
           <Contact />
         </div>
         <div className='rounded-2xl xl:justify-center xl:flex items-center xl:flex-col w-full max-w-2xl space-y-5'>
-          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white shadow-lg  gap-8'>
+          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white/70 border-black/20 shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <MapPin />
             </div>
@@ -47,7 +47,7 @@ export default function Page() {  // Changed to uppercase 'P'
               <p className='text-lg'>Aakarshan Furniture Systems, Plot no- D2/9 Tikona Park, New Industrial Township 2- NIT, Faridabad - 121001, Near Canara Bank</p>
             </div>
           </BlurFade>
-          <div className='flex border py-6 px-11 w-full rounded-3xl bg-white shadow-lg  gap-8'>
+          <div className='flex border py-6 px-11 w-full rounded-3xl bg-white/70 border-black/20 shadow-lg  gap-8'>
             <BlurFade className='flex justify-center items-center'>
               <Phone />
             </BlurFade>
@@ -60,7 +60,7 @@ export default function Page() {  // Changed to uppercase 'P'
             </BlurFade>
           </div>
           <div className=' grid gap-4 grid-cols-1 xl:grid-cols-2 w-full'>
-          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white shadow-lg  gap-8'>
+          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white/70 border-black/20 shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />
             </div>
@@ -72,7 +72,7 @@ export default function Page() {  // Changed to uppercase 'P'
               <a href="mailto:ankit@Casa mobilia.in">ankit@Casa mobilia.in</a>
             </div>
           </BlurFade>
-          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white shadow-lg  gap-8'>
+          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white/70 border-black/20 shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />
             </div>
@@ -85,7 +85,7 @@ export default function Page() {  // Changed to uppercase 'P'
             </div>
           </BlurFade>
           </div>
-          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white shadow-lg  gap-8'>
+          <BlurFade className='flex border py-6 px-11 w-full rounded-3xl bg-white/70 border-black/20 shadow-lg  gap-8'>
             <div className='flex justify-center items-center'>
               <Mail />
             </div>
