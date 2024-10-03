@@ -14,7 +14,7 @@ const FADE_DOWN_ANIMATION_VARIANTS = {
 
 const LogoCarousel = () => (
     <div
-        className="group relative mt-6 flex gap-6 overflow-hidden p-5"
+        className="group relative mt-6  flex gap-6 overflow-hidden p-5"
         style={{
             maskImage: 'linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 95%)',
         }}
@@ -32,7 +32,7 @@ const LogoCarousel = () => (
                         height={160}
                         key={i}
                         src={logo.logo}
-                        className="object-cover dark:brightness-0 dark:invert"
+                        className="object-cover"
                         alt={logo.name}
                     />
                 </div>
@@ -44,7 +44,7 @@ const LogoCarousel = () => (
                         height={160}
                         key={i}
                         src={logo.logo}
-                        className="object-cover dark:brightness-0 dark:invert"
+                        className="object-cover"
                         alt={logo.name}
                     />
                 </div>
@@ -56,7 +56,7 @@ const LogoCarousel = () => (
                         height={160}
                         key={i}
                         src={logo.logo}
-                        className="object-cover dark:brightness-0 dark:invert"
+                        className="object-cover"
                         alt={logo.name}
                     />
                 </div>
@@ -68,7 +68,7 @@ const LogoCarousel = () => (
                         height={160}
                         key={i}
                         src={logo.logo}
-                        className="object-cover dark:brightness-0 dark:invert"
+                        className="object-cover"
                         alt={logo.name}
                     />
                 </div>
@@ -80,7 +80,7 @@ const LogoCarousel = () => (
                         height={160}
                         key={i}
                         src={logo.logo}
-                        className="object-cover dark:brightness-0 dark:invert"
+                        className="object-cover"
                         alt={logo.name}
                     />
                 </div>
@@ -92,7 +92,7 @@ const LogoCarousel = () => (
                         height={160}
                         key={i}
                         src={logo.logo}
-                        className="object-cover dark:brightness-0 dark:invert"
+                        className="object-cover"
                         alt={logo.name}
                     />
                 </div>

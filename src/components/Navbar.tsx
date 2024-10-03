@@ -86,7 +86,7 @@ interface MenuToggleProps {
 function MenuToggle({ isMenuOpen, setMenuOpen }: MenuToggleProps) {
     return (
         <button
-            className={cn("md:hidden group inline-flex w-12 h-12 text-center items-center justify-center transition rounded-lg text-black dark:text-white")}
+            className={cn("md:hidden group inline-flex w-12 h-12 text-center items-center justify-center transition rounded-lg text-black")}
             onClick={() => setMenuOpen(!isMenuOpen)}
         >
             <svg className="w-6 h-6 fill-current pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
