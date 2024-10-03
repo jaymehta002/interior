@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React from 'react'
 import Sideimage3 from '@/../public/ppsteel2.jpg'
 import Sideimage2 from '@/../public/dark.jpg'
 import Sideimage1 from '@/../public/light.jpg'
