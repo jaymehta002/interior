@@ -17,7 +17,7 @@ export default function Bento() {
                     muted
                     preload="none"
                     style={{ display: 'block' }}
-                    className=" rounded-3xl shadow-md h-full w-full object-cover border"
+                    className=" rounded-3xl  h-full w-full object-cover border"
                 >
                     <source src="/logoreveal.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

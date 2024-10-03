@@ -53,7 +53,7 @@ export default function NavigationBar() {
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ duration: 0.8, ease: 'easeIn', type: 'spring', stiffness: 40 }}
-                            className="flex md:hidden h-screen fixed px-16 bg-[#FAF9F6] py-28 w-full  overflow-hidden  rounded-xl flex-col  gap-10 text-lg font-medium">
+                            className="flex md:hidden h-screen fixed px-16 bg-[#FAF9F6]   py-28 w-full  overflow-hidden  rounded-xl flex-col  gap-10 text-lg font-medium">
                             {navigationItems.map((item, index) => (
                                 <motion.a
                                     initial={{ x: "100%", opacity: 0 }}

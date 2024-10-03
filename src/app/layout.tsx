@@ -6,22 +6,22 @@ import { constructMetadata } from "@/lib/utils";
 
 export const metadata = constructMetadata()
 
-const inter = PT_Sans({ style: 'normal', subsets: ['latin'],weight:'400' })
+const inter = PT_Sans({ style: 'normal', subsets: ['latin'], weight: '400' })
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   return (
     <html lang="en">
       <body
         className={` bg-[#FAF9F6] ${inter.className}`}
       >
-          <NavigationBar></NavigationBar>
-          {children}
-          <Footer></Footer>
+        <NavigationBar></NavigationBar>
+        {children}
+        <Footer></Footer>
       </body>
     </html>
   );
