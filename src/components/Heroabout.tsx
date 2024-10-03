@@ -7,10 +7,10 @@ import Sideimage1 from '@/../public/light.jpg'
 import Sideimage4 from '@/../public/10.jpg'
 import Button from './ui/Button'
 import BlurFade from './ui/blur-fade'
-import {motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function Heroabout() {
- 
+
 
     return (
         <motion.section className=' grid grid-cols-1 gap-5 lg:grid-cols-2 mt-5 p-4 sm:p-10 '>
