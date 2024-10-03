@@ -32,9 +32,9 @@ export default function NavigationBar() {
             transition={{ delay: 0.5, ease: 'easeIn' }}
             className='z-50 top-0 w-full  mx-auto fixed flex justify-center items-center'>
             <motion.div
-                className={cn('w-full bg-[#FAF9F6] py-2')}
+                className={cn('w-full bg-[#FFFAF1] py-2')}
             >
-                <div className='w-full px-4 bg-[#FAF9F6] md:px-11 flex justify-between items-center gap-44 sm:gap-24'>
+                <div className='w-full px-4 bg-[#FFFAF1] md:px-11 flex justify-between items-center gap-44 sm:gap-24'>
                     <a href='/' className='flex gap-2 items-center'>
                         <img src="/logo.png" className="w-[5.7rem] h-11 font-semibold" alt="Logo" />
                     </a>
@@ -53,7 +53,7 @@ export default function NavigationBar() {
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ duration: 0.8, ease: 'easeIn', type: 'spring', stiffness: 40 }}
-                            className="flex md:hidden h-screen fixed px-16 bg-[#FAF9F6]   py-28 w-full  overflow-hidden  rounded-xl flex-col  gap-10 text-lg font-medium">
+                            className="flex md:hidden h-screen fixed px-16 bg-[#FFFAF1]   py-28 w-full  overflow-hidden  rounded-xl flex-col  gap-10 text-lg font-medium">
                             {navigationItems.map((item, index) => (
                                 <motion.a
                                     initial={{ x: "100%", opacity: 0 }}

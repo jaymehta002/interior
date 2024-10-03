@@ -96,10 +96,10 @@ export default function Page() {  // Renamed to Page
 
       <div className='mt-10 relative'>
         <div className='absolute top-0 w-[60%] lg:w-[40%] left-0'>
-          <BlurFade x={-30} className='text-2xl lg:text-6xl font-semibold w-full p-5 rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6'>
+          <BlurFade x={-30} className='text-2xl lg:text-6xl font-semibold w-full p-5 rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FFFAF1] lg:pt-3 lg:pr-6'>
             Our Knowledge
           </BlurFade>
-          <BlurFade x={-30} className='text-xs md:text-lg p-5 w-[80%] rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6'>
+          <BlurFade x={-30} className='text-xs md:text-lg p-5 w-[80%] rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FFFAF1] lg:pt-3 lg:pr-6'>
             Casa Mobilia&apos;s strength is its expertise, combining culture and knowledge to form design ideas before turning them to life.
           </BlurFade>
         </div>

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` bg-[#FAF9F6] ${inter.className}`}
+        className={` bg-[#FFFAF1] ${inter.className}`}
       >
         <NavigationBar></NavigationBar>
         {children}
