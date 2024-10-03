@@ -98,7 +98,7 @@ export default function Page() {  // Changed to uppercase 'P'
           </BlurFade>
         </div>
       </div>
-      <BlurFade className='w-full mt-14 relative border shadow-md block'>
+      <BlurFade className='w-full mt-14 relative border shadow-md rounded-3xl block'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.1997543421367!2d77.29341977549161!3d28.383034075801962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddecc299103d%3A0x7c6502b3565f4f5e!2sCasa%20Mobilia%20-%20Finest%20Bespoke%20Interiors%20%26%20Furniture*21!5e0!3m2!1sen!2sin!4v1727268274347!5m2!1sen!2sin" width="600" height="450" loading="lazy" className='w-full rounded-3xl relative' referrerPolicy="no-referrer-when-downgrade"></iframe>
       </BlurFade>
     </section>
