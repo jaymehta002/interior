@@ -35,7 +35,7 @@ export default function Bento() {
                 </div>
             </BlurFade>
             <div className=' md:col-span-4 flex flex-col gap-5 group/cardthree'>
-                <BlurFade y={0} x={20} className='border shadow-inner shadow-black/40 border-black/30 bg-[#f0ecec] flex flex-col justify-between relative rounded-3xl gap-3 p-8'>
+                <BlurFade y={0} x={20} className='border shadow-md shadow-black/40 border-black/30 bg-[#f0ecec] flex flex-col justify-between relative rounded-3xl gap-3 p-8'>
                     <p>Aesthetic furniture where every piece tells a story of style</p>
                     <p className=' font-bold text-4xl'>Into a gallery of elegance</p>
                     <div>
