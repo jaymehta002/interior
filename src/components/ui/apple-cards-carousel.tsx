@@ -171,7 +171,7 @@ export const Card = ({
       <motion.a
         href={`portfolio/${href}`}
         layoutId={layout ? `card-${title}` : undefined}
-        className="rounded-3xl relative border shadow-lg group/card3 bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
+        className="rounded-3xl relative border shadow-lg group/card3 bg-gray-100 :bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <BlurImage
