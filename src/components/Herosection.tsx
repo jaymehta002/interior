@@ -16,10 +16,10 @@ export default function Herosection() {
   const scale=useTransform(scrollYProgress,[0,1],[1,0.9])
 
   return (
-    <section  className="relative overflow-hidden rounded-3xl h-screen w-full mt-10 sm:mt-7 ">
+    <section  className="relative overflow-hidden rounded-3xl h-screen w-full mt-16 sm:mt-7 ">
       <motion.div
       style={{y:y,opacity:opacity,scale:scale}}
-      className=' h-full w-full absolute rounded-3xl border shadow-md p-4 sm:p-10  overflow-hidden'>
+      className=' h-full w-full absolute rounded-3xl  p-4 sm:p-10  overflow-hidden'>
         <Image src={backgroundimage} alt='background image' className='image border shadow-md h-full w-full rounded-3xl object-cover object-center'></Image>
       </motion.div>
       <div className=' h-full w-full overflow-hidden flex flex-col  p-4 sm:p-10'>

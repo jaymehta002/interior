@@ -180,8 +180,8 @@ export const Card = ({
           fill
           className="object-cover absolute z-10 inset-0"
         />
-        <div className=' absolute bottom-0 left-0 flex z-20 p-5 justify-between w-full'>
-          <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
+        <div className=' absolute bottom-0 left-0 flex z-20  p-5 justify-between w-full'>
+          <MoveUpRight className='  rounded-full bg-[#FFFAF1] shadow-inner shadow-black p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
         </div>
         <div className="relative z-40 p-8">
           <motion.p
