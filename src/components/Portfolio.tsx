@@ -29,7 +29,7 @@ export default function Portfolio() {
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Commercial
                                 </p>
-                                <MoveUpRight className=' bg-stone-100 rounded-full p-2 size-11 group-hover/card1:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card1:-translate-y-1'></MoveUpRight>
+                                <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card1:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card1:-translate-y-1'></MoveUpRight>
                             </div>
                         </a>
                     </BlurFade>
@@ -40,7 +40,7 @@ export default function Portfolio() {
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Office
                                 </p>
-                                <MoveUpRight className=' bg-stone-100 rounded-full p-2 size-11 group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'></MoveUpRight>
+                                <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'></MoveUpRight>
                             </div>
                         </a>
                     </BlurFade>
@@ -53,7 +53,7 @@ export default function Portfolio() {
                             <p className=' text-4xl font-semibold tracking-widest text-white'>
                                 luxuryresidences
                             </p>
-                            <MoveUpRight className=' bg-stone-100 rounded-full p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
+                            <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
                         </div>
                     </a>
                 </BlurFade>
@@ -65,7 +65,7 @@ export default function Portfolio() {
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Home
                                 </p>
-                                <MoveUpRight className=' bg-stone-100 rounded-full p-2 size-11 group-hover/card1:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card1:-translate-y-1'></MoveUpRight>
+                                <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card1:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card1:-translate-y-1'></MoveUpRight>
                             </div>
                         </a>
                     </BlurFade>
@@ -76,7 +76,7 @@ export default function Portfolio() {
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Outdoor
                                 </p>
-                                <MoveUpRight className=' bg-stone-100 rounded-full p-2 size-11 group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'></MoveUpRight>
+                                <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card2:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card2:-translate-y-1'></MoveUpRight>
                             </div>
                         </a>
                     </BlurFade>

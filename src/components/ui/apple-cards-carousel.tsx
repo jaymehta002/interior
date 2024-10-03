@@ -86,7 +86,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-     
+
       <div className="relative w-full">
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto py-5 md:py-10 scroll-smooth [scrollbar-width:none]"
@@ -130,21 +130,21 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           </div>
         </div>
         <div className="flex justify-end gap-2 mr-10">
-        <button
-          className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-          onClick={scrollLeft}
-          disabled={!canScrollLeft}
-        >
-          <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
-        </button>
-        <button
-          className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
-          onClick={scrollRight}
-          disabled={!canScrollRight}
-        >
-          <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
-        </button>
-      </div>
+          <button
+            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            onClick={scrollLeft}
+            disabled={!canScrollLeft}
+          >
+            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+          </button>
+          <button
+            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            onClick={scrollRight}
+            disabled={!canScrollRight}
+          >
+            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+          </button>
+        </div>
       </div>
     </CarouselContext.Provider>
   );
@@ -161,7 +161,7 @@ export const Card = ({
   index: number;
   title: string;
   src: string;
-  subheading:string;
+  subheading: string;
   href: string;
   layout?: boolean;
 }) => {
@@ -169,7 +169,7 @@ export const Card = ({
   return (
     <>
       <motion.a
-      href={`portfolio/${href}`}
+        href={`portfolio/${href}`}
         layoutId={layout ? `card-${title}` : undefined}
         className="rounded-3xl relative border shadow-lg group/card3 bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
       >
@@ -181,7 +181,7 @@ export const Card = ({
           className="object-cover absolute z-10 inset-0"
         />
         <div className=' absolute bottom-0 left-0 flex z-20 p-5 justify-between w-full'>
-          <MoveUpRight className=' bg-stone-100 rounded-full p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
+          <MoveUpRight className='  rounded-full p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
         </div>
         <div className="relative z-40 p-8">
           <motion.p

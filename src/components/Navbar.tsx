@@ -34,14 +34,13 @@ export default function NavigationBar() {
             <motion.div
                 className={cn('w-full bg-[#FAF9F6] py-2')}
             >
-                <div className='w-full px-4 md:px-11 flex justify-between items-center gap-44 sm:gap-24'>
+                <div className='w-full px-4 bg-[#FAF9F6] md:px-11 flex justify-between items-center gap-44 sm:gap-24'>
                     <a href='/' className='flex gap-2 items-center'>
                         <img src="/logo.png" className="w-[5.7rem] h-11 font-semibold" alt="Logo" />
                     </a>
                     <div className="hidden md:flex items-center gap-4 text-base font-medium">
                         {navigationItems.map((item, index) => (
-                            <Texthover text={item.name} className='opacity-85 hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
-
+                            <Texthover text={item.name} className='opacity-85  hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
                             </Texthover>
                         ))}
                     </div>
@@ -53,8 +52,8 @@ export default function NavigationBar() {
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
-                            transition={{ duration: 0.8, ease: 'easeIn', type: 'spring', stiffness: 50 }}
-                            className="flex h-screen fixed px-16 py-28 bg-stone-100 w-full  overflow-hidden dark:bg-stone-100/10 rounded-xl flex-col  gap-5 text-lg font-medium">
+                            transition={{ duration: 0.8, ease: 'easeIn', type: 'spring', stiffness: 40 }}
+                            className="flex md:hidden h-screen fixed px-16 bg-[#FAF9F6] py-28 w-full  overflow-hidden  rounded-xl flex-col  gap-10 text-lg font-medium">
                             {navigationItems.map((item, index) => (
                                 <motion.a
                                     initial={{ x: "100%", opacity: 0 }}

@@ -65,7 +65,7 @@ const FADE_DOWN_ANIMATION_VARIANTS = {
 
 const Testimonial: FC = () => {
     return (
-        <section className="w-full py-12">
+        <section className="w-full pb-5">
             <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -74,7 +74,7 @@ const Testimonial: FC = () => {
                     hidden: {},
                     show: { transition: { staggerChildren: 0.3 } },
                 }}
-                className='flex flex-col items-center mb-20'
+                className='flex flex-col items-center mb-5'
             >
                 <motion.p
                     variants={FADE_DOWN_ANIMATION_VARIANTS}
@@ -101,7 +101,7 @@ const Testimonial: FC = () => {
                             key={index}
                             initial={{ translateX: 0 }}
                             animate={{ translateX: 'calc(-100% - 3rem)' }}
-                            transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+                            transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
                             className="flex shrink-0 flex-row justify-around gap-6"
                         >
                             {testimonials.map((testimonial, i) => (
@@ -130,7 +130,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => {
     return (
         <div
-            className={`card-shadow shadow-lg bg-stone-100 dark:bg-black dark:shadow-inner dark:shadow-white/30 p-5 dark:border-neutral-90 relative flex h-auto max-w-[16rem] select-none flex-col items-baseline py-5 justify-center overflow-hidden rounded-2xl border transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-5`}
+            className={`card-shadow shadow-md p-5 relative flex h-auto max-w-[16rem] select-none flex-col items-baseline py-5 justify-center overflow-hidden rounded-2xl border transition-all duration-300 ease-in-out hover:-translate-y-5`}
         >
             <p className="mt-3 text-left text-sm font-light text-gray-600 md:text-base dark:text-gray-400">
                 {description}

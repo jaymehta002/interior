@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import data from '@/../data/home.json'
+import Image from "next/image";
 
 
 const logos = data.home.brands;
@@ -26,7 +27,9 @@ const LogoCarousel = () => (
          
             {logos.map((logo, i) => (
                 <div key={i} className="h-32 w-40 flex justify-center items-center">
-                    <img
+                    <Image
+                        width={128}
+                        height={160}
                         key={i}
                         src={logo.logo}
                         className="object-cover dark:brightness-0 dark:invert"
@@ -36,7 +39,9 @@ const LogoCarousel = () => (
             ))}
             {logos.map((logo, i) => (
                 <div key={i} className="h-32 w-40 flex justify-center items-center">
-                    <img
+                    <Image
+                        width={128}
+                        height={160}
                         key={i}
                         src={logo.logo}
                         className="object-cover dark:brightness-0 dark:invert"
@@ -46,7 +51,9 @@ const LogoCarousel = () => (
             ))}
             {logos.map((logo, i) => (
                 <div key={i} className="h-32 w-40 flex justify-center items-center">
-                    <img
+                    <Image
+                        width={128}
+                        height={160}
                         key={i}
                         src={logo.logo}
                         className="object-cover dark:brightness-0 dark:invert"
@@ -56,7 +63,9 @@ const LogoCarousel = () => (
             ))}
             {logos.map((logo, i) => (
                 <div key={i} className="h-32 w-40 flex justify-center items-center">
-                    <img
+                    <Image
+                        width={128}
+                        height={160}
                         key={i}
                         src={logo.logo}
                         className="object-cover dark:brightness-0 dark:invert"
@@ -66,7 +75,9 @@ const LogoCarousel = () => (
             ))}
             {logos.map((logo, i) => (
                 <div key={i} className="h-32 w-40 flex justify-center items-center">
-                    <img
+                    <Image
+                        width={128}
+                        height={160}
                         key={i}
                         src={logo.logo}
                         className="object-cover dark:brightness-0 dark:invert"
@@ -76,7 +87,9 @@ const LogoCarousel = () => (
             ))}
             {logos.map((logo, i) => (
                 <div key={i} className="h-32 w-40 flex justify-center items-center">
-                    <img
+                    <Image
+                        width={128}
+                        height={160}
                         key={i}
                         src={logo.logo}
                         className="object-cover dark:brightness-0 dark:invert"

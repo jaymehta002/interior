@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 import Button from './Button';
+import BlurFade from './blur-fade';
 
 type Inputs = {
     email: string
@@ -30,9 +31,9 @@ export default function Contact() {
 
 
     return (
-        <div className='w-full '>
+        <div className='w-full max-w-2xl'>
             <form className=' flex flex-col gap-4' onSubmit={handleSubmit(onSubmit)}>
-                <div
+                <BlurFade
                     className="[--clr:#1f1f1f] dark:[--clr:#999999] relative flex flex-row items-center"
                 >
                     <input
@@ -88,8 +89,8 @@ export default function Contact() {
                         >Required!
                         </span>
                     </div>
-                </div>
-                <div
+                </BlurFade>
+                <BlurFade
                     className="[--clr:#1f1f1f] mt-3 dark:[--clr:#999999] relative  flex flex-row items-center"
                 >
                     <textarea
@@ -103,7 +104,7 @@ export default function Contact() {
                     >
                         Message
                     </label>
-                </div>
+                </BlurFade>
                 <Button text='Submit' ></Button>
             </form>
         </div>
